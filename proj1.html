@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grace Guo | SEE</title>
+		<link rel="stylesheet" type="text/css" href="proj1.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="proj1.js"></script>
+	</head>
+	<body class="majorGrid">
+
+		<div class="wrapper">
+			<a class="name" href="index.html" style="color:black">Grace Guo</a>
+			<a class="text" id="link1" href="index.html">projects</a>
+			<a class="text" id="link2" href="files/resume.pdf">resume</a>
+		</div>
+
+		<div class="wrapper2">
+			
+			<div class="metaInfo">
+				<h2 class="pName">SEE</h2>
+				<p style="margin:0px">CMU Learning Media Design Center</p>
+				<p style="margin:0px">Mentor: Dr. Jessica Roberts</p>
+			</div>
+
+			<div id="one">
+				<p class="contents" style="margin:0px">Digital Technologies for</p>
+				<p class="contents" style="margin:0px">Citizen Entomologists</p>
+			</div>
+			<div id="two">
+				<p class="contents" style="margin:0px">Designing an Online</p>
+				<p class="contents" style="margin:0px">Learning Tool</p>
+			</div>
+			<p class="contents" id="three" style="margin:0px">Three Models</p>
+			<p class="contents" id="four" style="margin:0px">Case Studies</p>
+			<p class="contents" id="five" style="margin:0px">Moving Forward</p>
+
+			<div class="w3-content w3-display-container" id="slides">
+			  <img class="mySlides" src="images/proj1.png" style="width:100%; display:block">
+			  <img class="mySlides" src="images/test1.jpg" style="width:100%; display:none">
+			  <img class="mySlides" src="images/proj1.png" style="width:100%; display:none">
+			  <img class="mySlides" src="images/test2.jpg" style="width:100%; display:none">
+
+			  <button class="w3-button w3-display-left" style="background-color:rgba(255, 255, 255, 0.5)" onclick="plusDivs(-1)">&#10094;</button>
+			  <button class="w3-button w3-display-right button" style="background-color:rgba(255, 255, 255, 0.5)" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+			
+			<div id="partzero">
+				<p style="margin-top:0px">SEE (Shared Externalization of Expertise) is a model for visually representing the expert process of taxonomic identification. The SEE visualizations provide guidance for the design of citizen science platforms and can be used as a communication tool between different stakeholders during the design process. The paper presenting SEE is lead authored by <a href="https://www.hcii.cmu.edu/people/jessica-roberts">Dr. Jessica Roberts</a> and has been submitted to <a href="https://www.isls.org/conferences/icls">ICLS 2018.</a></p>
+				<p>SEE is developed as part of the larger NSF funded project <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1623969">Learning to See, Seeing to Learn</a>.</p>
+			</div>
+			<div id="partone">
+				<p class="paragraph">
+					The work of citizen scientists has been invaluable for gathering and monitoring environmental data over time. In recent years, a variety of digital technologies have been developed in order to facilitate such work, making it easier for more people to engage in citizen science activities.
+				</p>
+				<p class="paragraph">
+					Biological monitoring of macroinvertebrates in freshwater ecosystems is one area in which reliably, high-quality data gathered by citizen scientists yields critical information about the water quality and health of these ecosystems. The online educational resource <a href="http://macroinvertebrates.org/#/">macroinvertebrates.org</a> was thus envisioned to help train citizen scientists in data collection, using high-resolution gigapixel images of macroinvertebrates and supplemental media to <b>improve volunteer engagement, accuracy and confidence</b>.
+				</p>
+				<div class="container">
+					<img class="image" src="images/proj1 fig1.png">
+					<div class="overlay">
+						<p class="imageText">macroinvertebrates.org is an online educational resource developed for training citizen scientists to identify freshwater macroinvertebrates.</p>
+					</div>
+				</div>
+			</div>
+			<div id="parttwo">
+				<p class="paragraph">
+					The goal of an online educational resource for training citizen scientists is not to turn these volunteers into professional entomologists. However, part of what makes professional entomologists experts in their field is their ability to apply a variety of strategies to make an accurate identification. <b>A successful learning tool should help these citizen scientists acquire the expert strategies needed to generate reliable data</b>.
+				</p>
+				<p class="paragraph">
+					It is thus necessary to <b>identify, visualize and articulate these expert strategies</b> to stakeholders involved in the design of this online learning tool. To that end, SEE was developed to facilitate communicate across disciplines about the kinds of expert strategies the educational platform should support.
+				</p>
+			</div>
+			<div id="partthree">
+				<p class="paragraph">The initial model of visualization is called Play-by-Play. This is a linear recreation of an identification process, breaking it down into separate steps. Each step is considered a shift between resources (e.g. look at specimen, look at key, look back at specimen). Although it is possible to look at a Play-by-Play visualization and get a general sense for patterns of steps and ease of identification, it is hard to intuit the strategies used and obstacles encountered. Nonetheless, the Play-by-Play is a useful initial model that can be translated into other, clearer representations.
+				</p>
+				<img class="image" src="images/test1.jpg">
+				<p class="paragraph">The matrix model compares the resources used (vertical) against the information sought (horizontal). This model is ideal for identifying frequently used resources, but provides little information about the actual process.
+				</p>
+				<p class="paragraph">SEE incorporates the strengths of the above two models. Steps taken towards an identification are represented as moves downwards while changes in strategy (such as looking at a figure when unsure about terms in the text) are represented as moves toward the right.
+				</p>
+				<p class="paragraph">The SEE model makes it clear at a glance where experts struggled and the kinds of strategies they had to adopt before making a definite move downwards. This provides information about the kinds of strategic practices the website could or should have supported. It can thus be used as a grounding point for design decisions about the features that would help novices making an identification.</p>
+				<p class="paragraph">The wireframes I created prototyped the appearance of the app when accessed by different users. Some initial features included how parking lot owners can list their parking location on the app and how users can rate one another.
+				</p>
+			</div>
+			<div id="partfour">
+				
+			</div>
+			<div id="partfive">
+				<p class="paragraph">I am now designing a usability study to test the current implementation of the website. Part of the study will involve asking participants (novices at entomology) to perform an identification using the website. Their process will then be visualized using the SEE model, which will then be used to identify possible design improvements.
+				</p>
+			</div>
+
+		</div>
+
+		<div id="item3" class="items">
+			<p>&copy Grace Guo, 2017</p>
+		</div>
+
+	</body>
+</html>
