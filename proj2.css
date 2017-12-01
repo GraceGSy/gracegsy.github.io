@@ -80,7 +80,7 @@ body content */
 	line-height: 20px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(7, auto);
+	grid-template-rows: repeat(11, auto);
 	grid-gap: 30px 30px;
 	margin-top: 25px;
 }
@@ -120,7 +120,7 @@ adding images with overlay */
 	position: absolute;
 	bottom: 0%;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.5);
 	font-size: 11px;
 	line-height: 15px;
 }
@@ -165,6 +165,31 @@ content labels at the side */
 	grid-row: 6/7;
 }
 
+#five {
+	grid-column: 1/2;
+	grid-row: 7/8;
+}
+
+#six {
+	grid-column: 1/2;
+	grid-row: 8/9;
+}
+
+#seven {
+	grid-column: 1/2;
+	grid-row: 9/10;
+}
+
+#eight {
+	grid-column: 1/2;
+	grid-row: 10/11;
+}
+
+#nine {
+	grid-column: 1/2;
+	grid-row: 11/12;
+}
+
 .paragraph {
 	margin-top: 0px;
 }
@@ -204,6 +229,31 @@ content paragraphs */
 #partfour {
 	grid-column: 2/4;
 	grid-row: 6/7;
+}
+
+#partfive {
+	grid-column: 2/4;
+	grid-row: 7/8;
+}
+
+#partsix {
+	grid-column: 2/4;
+	grid-row: 8/9;
+}
+
+#partseven {
+	grid-column: 2/4;
+	grid-row: 9/10;
+}
+
+#parteight {
+	grid-column: 2/4;
+	grid-row: 10/11;
+}
+
+#partnine {
+	grid-column: 2/4;
+	grid-row: 11/12;
 }
 
 
