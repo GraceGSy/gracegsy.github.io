@@ -18,143 +18,68 @@
 		<div class="wrapper2">
 			
 			<div class="metaInfo">
-				<h2 class="pName">Adaptive UIs</h2>
+				<h2 class="pName">Adaptive Mobile UIs</h2>
 				<p style="margin:0px">Mentor: Dr. John Zimmerman</p>
 			</div>
 
 			<div id="one">
-				<p class="contents" style="margin:0px">Our Mission</p>
+				<p class="contents" style="margin:0px">Making Interfaces Adaptive</p>
 			</div>
 			<div id="two">
-				<p class="contents" style="margin:0px">Preliminary Research</p>
+				<p class="contents" style="margin:0px">Preliminary Investigations</p>
 			</div>
 			<div id="three">
-				<p class="contents" style="margin:0px">Interviews and</p>
-				<p class="contents" style="margin:0px">Contextual Inquiries</p>
-			</div>
-			<p class="contents" id="four" style="margin:0px">Affinity Digrams</p>
-			<p class="contents" id="five" style="margin:0px">Personas</p>
-			<p class="contents" id="six" style="margin:0px">Journey Maps</p>
-			<p class="contents" id="seven" style="margin:0px">How might we encourage clients to discover new ways of preparing healthy foods through an exchange of knowledge?</p>
-			<p class="contents" id="eight" style="margin:0px">How might we turn clients into contributors instead of just benefactors?</p>
-			<p class="contents" id="nine" style="margin:0px">Special Thanks</p>
-
-			<div class="w3-content w3-display-container" id="slides">
-				<div class="container mySlides">
-					<img class="image" src="images/proj4 process 3.png">
-					<div class="overlay">
-						<p class="imageText">Map of food deserts in Pittsburgh, created by Zachary Murray for <a href="http://www.justharvest.org/wp-content/uploads/2013/11/a-menu-for-food-justice-executive-summary.pdf">A Menu for Food Justice</a></p>
-					</div>
-				</div>
-				<div class="container mySlides" style="display:none">
-					<img class="image" src="images/proj4 process 2.jpg">
-					<div class="overlay">
-						<p class="imageText">Jubilee Kitchen, one of the non-profits that kindly let us interview their clients</p>
-					</div>
-				</div>
-				<div class="container mySlides" style="display:none">
-					<img class="image" src="images/proj4 process 4.jpg">
-					<div class="overlay">
-						<p class="imageText">Shelves labeled with Arabic signage for refugee families</p>
-					</div>
-				</div>
-				<div class="container mySlides" style="display:none">
-					<img class="image" src="images/proj4 process 1.jpeg">
-					<div class="overlay">
-						<p class="imageText">Tiff and I working on our affinity diagram after the interviews</p>
-					</div>
-				</div>
-
-			  <button class="w3-button w3-display-left" style="background-color:rgba(255, 255, 255, 0.5)" onclick="plusDivs(-1)">&#10094;</button>
-			  <button class="w3-button w3-display-right button" style="background-color:rgba(255, 255, 255, 0.5)" onclick="plusDivs(1)">&#10095;</button>
+				<p class="contents" style="margin:0px">Communicating Adaptions</p>
 			</div>
 			
 			<div id="partzero">
-				<p style="margin-top:0px">Pittsburgh is a city with one of the highest percentages of food insecurity in America. In this study, our team sought to learn more about the current situation and understand what it will take to solve this problem through contextual inquiries, expert interviews and affinity diagrams.</p>
+				<p style="margin-top:0px">Mobile phone usage patterns over time can provide a wealth of data about user habits and preferences, but the availability of this data has had relatively little impact on the design of mobile user interfaces that improve the user experience by adapting to individual users.</p>
+				<p style="margin-top:0px">The goal of this project is to identify design opportunities in every day apps where the UI can adapt to user habits to provide a more seamless interaction.</p>
 			</div>
 			<div id="partone">
 				<p class="paragraph">
-					To eliminate food insecurity through education and affordable access.
+					Mobile app users can sometimes have repetitive patterns and habits in the way they use the app. Consider, for example, the customer who always uses their Starbucks app for payment when in a Starbucks store. It is inefficient for this customer to land on the general Starbucks page and spend extra time maneuvering to the payments screen every time. Instead, a responsive UI will learn that:</p>
+				<p>
+					"when this user is in a Starbucks store" -> "the user will need the payments screen".
+				</p>
+				<p class="paragraph">
+					This kind of repeated usage data is an unexplored source of information that can be used to create adaptive UIs that are customized to each user's unique habits, predicting user needs and thus reducing unnecessary steps.
 				</p>
 			</div>
 			<div id="parttwo">
 				<p class="paragraph">
-					We began by reading up existing studies about food accessibility in Pittsburgh. Many organisations in Pittsburgh, such as JustHarvest and the Greater Pittsburgh Community Food Bank, have done great work studying and increasing accessibility to healthy food. In particular, <a href="http://www.justharvest.org/wp-content/uploads/2013/11/amenuforfoodjustice060713.pdf">A Menu for Food Justice</a> was an invaluable starting point for our own research.
+					I first made some preliminary observations of the mobile apps people around me used frequently. In particular, I took note of situations where certain interactions with the UI could be predicted.
 				</p>
 				<p class="paragraph">
-					The initial problems we identified from this preliminary research fell under three broad categories: distance, limited transportation and poverty.
+					One of the cases that I found striking, and which I chose to focus on, was the Forever 21 mobile shopping app. Users had to filter for their preferences each time they browsed a new category of items. None of these preferences were saved when users navigated away from a category, which means they sometimes had to input their sizes and color selections multiple times within the same session.
 				</p>
+				<!--<iframe width="438" height="930" src="https://invis.io/SKERLSD5X" frameborder="0" allowfullscreen><p>Your browser does not support iframes</p></iframe>-->
 			</div>
 			<div id="partthree">
-				<p class="paragraph">We reached out to a number of food banks and food kitchens in Pittsburgh for interviews, and many offered to let our team visit their premises and conduct contextual inquiries with their staff and customers.
+				<p class="paragraph">Constant selection and re-selection of preferences is exactly the kind of repetitive interaction that adds little to the user experience. Since an individual's preferences, such as size and price range, are unlikely to differ much within the same browsing session, I felt that a shopping app can easily adapt and filter for these preferences automatically.
 				</p>
-				<p class="paragraph">From these contextual inquiries, it became apparent that the problem was much larger than we had initially understood, consisting of many interconnected factors that all affect an individual's accessibility to healthy, fresh produce. Mel, from the CHS Food Pantry, puts it best:
+				<p class="paragraph">The challenge is to communicate to the user that such an adaptation has taken place. Below are some initial mock-ups I created. The main idea was for the loading screen animation to indicate that user preferences are being filtered for.
 				</p>
-				<p class="paragraph"><i>"Handing someone food is not solving issues... It is just a temporary band aid."</i>
-				</p>
+				<div class="gifs">
+				<img id="gif1" class="image" src="images/proj2 loading 1.gif">
+				<img id="gif2" class="image" src="images/proj2 loading 2.gif">
+				</div>
 			</div>
 			<div id="partfour">
-				<p class="paragraph">Affinity diagrams help make sense of qualitative data gathered in the field. By organising and grouping interview notes by topic similarity, we were able to identify patterns in the experiences of our interviewees, key insights and possible design opportunities.</p>
-				<img class="image" src="images/proj4 affinity.png">
-				<p class="paragraph">What we initially thought were the main problems are now only components of a much larger picture. The real scope of the challenges that food bank clients face is much greater, and of these, we chose to focus on food literacy and employment.</p>
+				<p class="paragraph">The feedback I received was that the loading screen provided too little information about the preferences being filtered for. I created a new animation that more closely resembled the existing preferences selection interface.
+				</p>
+				<video width="400" controls>
+					<source src="files/proj2 third.mp4" type="video/mp4">
+				</video>
 			</div>
-
 			<div id="partfive">
-				<p class="paragraph">Personas are archetypal users created to represent the individuals we design for, they provide realistic context and scenarios for how users will interact with proposed solutions.</p>
-				<p class="paragraph">We made personas of the different types of customers we were designing for. These personas were based off the personal stories of the clients we spoke to.</p>
-				<img class="image" src="images/proj4 persona1.png">
-				<img class="image" src="images/proj4 persona2.png">
-				<img class="image" src="images/proj4 persona3.png">
-			</div>
-
-			<div id="partsix">
-				<p class="paragraph">Journey maps are visualised sequences of customer actions, organized into stages with customer feelings and frustrations at each stage mapped out. These maps helped us identify touchpoints and breakdowns that can be turned into design opportunities.</p>
-				<img class="image" src="images/proj4 jm1.png">
-				<img class="image" src="images/proj4 jm2.png">
-			</div>
-
-			<div id="partseven">
-				<p class="paragraph">
-					Food literacy is about encouraging customers to choose healthy food and produce for themselves. When tackling this problem, we wanted to share the knowledge and experiences that many clients already have.
+				<p class="paragraph">Although the above loading animation design was informative about the preferences being selected for, it was time consuming and could be tiresome if viewed multiple times. I thus challenged myself to fit the entire loading animation in under 2 seconds.
 				</p>
-				<p class="paragraph">
-					Our proposed solution is for customers, when they collect their food, to receive blank recipe cards that they can then fill in with their own recipes. The cards are shared on the bulletin boards at food pantries and soup kitchens for other customers to see.
+				<p class="paragraph">The following animation filters for color preferences in a little more than 1 second. Conceivably, size and price preferences can also be selected for with little additional time although those aspects are not animated here.
 				</p>
-				<div class="container">
-					<img class="image" src="images/proj4 final1.png">
-					<div class="overlay">
-						<p class="imageText">Proposal 1: storyboard illustration by Maggie Banks.</p>
-					</div>
-				</div>
-				<p class="paragraph">
-					This solution was created for clients like Gabrielle who visit the soup kitchen not just for food but also to socialize with their friends. As we found, the most effective food literacy education came from one-on-one conversations. We hope that such a solution will leverage on the existing communities at food pantries and soup kitchens to encourage customers to try new produce and new recipes.
-				</p>
-			</div>
-
-			<div id="parteight">
-				<p class="paragraph">
-					The problem of employment is particularly relevant to customers like Tyler and Patrick who have the capabilities to work but lack the opportunity. We wanted to propose a solution that helps them gain marketable skills while also returning them their sense of independence and security.
-				</p>
-				<div class="container">
-					<img class="image" src="images/proj4 final2.png">
-					<div class="overlay">
-						<p class="imageText">Proposal 2: storyboard illustration by Maggie Banks.</p>
-					</div>
-				</div>
-				<p class="paragraph">
-					Our proposed solution is a co-op program at the food bank; volunteers will help with the operations and in return, they will receive gift cards for grocery stores. Through working at the food bank, customers will gain experience managing, distributing and taking stock of the produce; these experiences can then help them in their job search. Additionally, food banks will also have a constant group of volunteers to help the work they do. It is our hope that this solution can thus benefit both clients and staff in the long-term.
-				</p>
-			</div>
-
-			<div id="partnine">
-				<p class="paragraph">Maggie and Tiff, for their invaluable contributions and general awesomeness.
-				</p>
-				<p class="paragraph">
-					Paulette Blasko, Mel Cronin, Tom and Peggy Donley, for their generous insights and knowledge. We could not have done this without your help.
-				</p>
-				<p class="paragraph">
-					The customers of Jubilee Soup Kitchen and St. Paul's of the Cross Monastery Food Bank. Thank you for sharing your stories.
-				</p>
+				<video width="400" controls>
+					<source src="files/proj2 fourth.mp4" type="video/mp4">
+				</video>
 			</div>
 
 		</div>

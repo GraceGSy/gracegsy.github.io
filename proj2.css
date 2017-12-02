@@ -80,7 +80,7 @@ body content */
 	line-height: 20px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(11, auto);
+	grid-template-rows: repeat(5, auto);
 	grid-gap: 30px 30px;
 	margin-top: 25px;
 }
@@ -170,25 +170,6 @@ content labels at the side */
 	grid-row: 7/8;
 }
 
-#six {
-	grid-column: 1/2;
-	grid-row: 8/9;
-}
-
-#seven {
-	grid-column: 1/2;
-	grid-row: 9/10;
-}
-
-#eight {
-	grid-column: 1/2;
-	grid-row: 10/11;
-}
-
-#nine {
-	grid-column: 1/2;
-	grid-row: 11/12;
-}
 
 .paragraph {
 	margin-top: 0px;
@@ -236,24 +217,20 @@ content paragraphs */
 	grid-row: 7/8;
 }
 
-#partsix {
-	grid-column: 2/4;
-	grid-row: 8/9;
+
+/* The following is for the gifs */
+.gifs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
 }
 
-#partseven {
-	grid-column: 2/4;
-	grid-row: 9/10;
+#gif1 {
+	grid-column: 1/2;
 }
 
-#parteight {
-	grid-column: 2/4;
-	grid-row: 10/11;
-}
-
-#partnine {
-	grid-column: 2/4;
-	grid-row: 11/12;
+#gif2 {
+	grid-column: 2/3;
 }
 
 

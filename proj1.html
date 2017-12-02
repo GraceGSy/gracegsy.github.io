@@ -37,14 +37,14 @@
 			<p class="contents" id="five" style="margin:0px">Moving Forward</p>
 
 			<div class="w3-content w3-display-container" id="slides">
-			  <img class="mySlides" src="images/proj1.png" style="width:100%; display:block">
-			  <img class="mySlides" src="images/test1.jpg" style="width:100%; display:none">
-			  <img class="mySlides" src="images/proj1.png" style="width:100%; display:none">
-			  <img class="mySlides" src="images/test2.jpg" style="width:100%; display:none">
-
-			  <button class="w3-button w3-display-left" style="background-color:rgba(255, 255, 255, 0.5)" onclick="plusDivs(-1)">&#10094;</button>
-			  <button class="w3-button w3-display-right button" style="background-color:rgba(255, 255, 255, 0.5)" onclick="plusDivs(1)">&#10095;</button>
+				<div class="container">
+					<img class="image" src="images/proj1 cover.png">
+					<div class="overlay">
+						<p class="imageText">The SEE visualization and part of corresponding play-by-play of an expert identifying an Ephemeroptera (Mayfly). Ephemeroptera illustration from macroinvertebrates.org.</p>
+					</div>
+				</div>
 			</div>
+			
 			
 			<div id="partzero">
 				<p style="margin-top:0px">SEE (Shared Externalization of Expertise) is a model for visually representing the expert process of taxonomic identification. The SEE visualizations provide guidance for the design of citizen science platforms and can be used as a communication tool between different stakeholders during the design process. The paper presenting SEE is lead authored by <a href="https://www.hcii.cmu.edu/people/jessica-roberts">Dr. Jessica Roberts</a> and has been submitted to <a href="https://www.isls.org/conferences/icls">ICLS 2018.</a></p>
@@ -73,19 +73,26 @@
 				</p>
 			</div>
 			<div id="partthree">
-				<p class="paragraph">The initial model of visualization is called Play-by-Play. This is a linear recreation of an identification process, breaking it down into separate steps. Each step is considered a shift between resources (e.g. look at specimen, look at key, look back at specimen). Although it is possible to look at a Play-by-Play visualization and get a general sense for patterns of steps and ease of identification, it is hard to intuit the strategies used and obstacles encountered. Nonetheless, the Play-by-Play is a useful initial model that can be translated into other, clearer representations.
+				<p class="paragraph">1. The initial model of visualization is called Play-by-Play. This is a linear recreation of an identification process, breaking it down into separate steps. Each step is considered a shift between resources (e.g. look at specimen, look at key, look back at specimen). Although it is possible to look at a Play-by-Play visualization and get a general sense for patterns of steps and ease of identification, it is hard to intuit the strategies used and obstacles encountered. Nonetheless, the Play-by-Play is a useful initial model that can be translated into other, clearer representations.
 				</p>
-				<img class="image" src="images/test1.jpg">
-				<p class="paragraph">The matrix model compares the resources used (vertical) against the information sought (horizontal). This model is ideal for identifying frequently used resources, but provides little information about the actual process.
+				<div class="container">
+					<img class="image" src="images/proj1 fig2.png" style="border: solid 1px #d3d3d3">
+					<div class="overlay">
+						<p class="imageText">Part of a play-by-play model visualizing the process of an expert identifying a mayfly.</p>
+					</div>
+				</div>
+				<p class="paragraph">2. The matrix model compares the resources used (vertical) against the information sought (horizontal). This model is ideal for identifying frequently used resources, but provides little information about the actual process.
 				</p>
-				<p class="paragraph">SEE incorporates the strengths of the above two models. Steps taken towards an identification are represented as moves downwards while changes in strategy (such as looking at a figure when unsure about terms in the text) are represented as moves toward the right.
+				<p class="paragraph">3. SEE incorporates the strengths of the above two models. Steps taken towards an identification are represented as moves downwards while changes in strategy (such as looking at a figure when unsure about terms in the text) are represented as moves toward the right.
 				</p>
 				<p class="paragraph">The SEE model makes it clear at a glance where experts struggled and the kinds of strategies they had to adopt before making a definite move downwards. This provides information about the kinds of strategic practices the website could or should have supported. It can thus be used as a grounding point for design decisions about the features that would help novices making an identification.</p>
-				<p class="paragraph">The wireframes I created prototyped the appearance of the app when accessed by different users. Some initial features included how parking lot owners can list their parking location on the app and how users can rate one another.
-				</p>
 			</div>
 			<div id="partfour">
-				
+				<p class="paragraph">The first visualization below is the process taken by an expert who has not done macroinvertebrate identification in years. It can be seen that there are many places where she observes the necessary features rapidly and moves downwards in terms of ID progression. However, there are places where she was uncertain about what she was seeing, and thus had to employ many strategy shifts sideways.</p>
+				<p>Notably, she made a guess at one point. Following that guess, the first ID she arrived at did not make sense to her because the location was outside where the specimen was collected, she then knew to return to where she struggled and took a second look to correct her mistake.</p>
+				<img class="image" src="images/201 Vis 2.png" style="border: solid 1px #d3d3d3">
+				<p class="paragraph">Comparatively the second and third experts below have both been doing macroinvertebrate identification for years. This is clear from the relatively shorter length of their SEE visualizations. It is also worth noting that most of their steps were downwards towards an identification, suggesting that they had little trouble looking for the  diagnostic features. In fact, expert 3 was able to identify the specimen almost at a glance.</p>
+				<img class="image" src="images/Vis 3.png" style="border: solid 1px #d3d3d3">
 			</div>
 			<div id="partfive">
 				<p class="paragraph">I am now designing a usability study to test the current implementation of the website. Part of the study will involve asking participants (novices at entomology) to perform an identification using the website. Their process will then be visualized using the SEE model, which will then be used to identify possible design improvements.
