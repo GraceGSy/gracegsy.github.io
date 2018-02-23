@@ -74,8 +74,8 @@ a:visited {
 	font-weight: 400;
 	line-height: 20px;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, auto);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, auto);
 	grid-gap: 30px 30px;
 	margin-top: 25px;
 }
@@ -90,11 +90,44 @@ a:visited {
 	opacity: 1;
 }
 
-#proj1 {
-	grid-column: 1/4;
+.textWrap {
+	display: flex;
+	align-items: center;
+}
+
+.projText {
+	text-align: left;
+}
+
+#proj3 {
+	grid-column: 1/2;
 	grid-row: 1/2;
 }
 
+#text3 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+#proj4 {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+#proj1 {
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+
+#proj2 {
+	grid-column: 1/2;
+	grid-row: 4/5;
+}
+
+#proj5 {
+	grid-column: 1/2;
+	grid-row: 5/6;
+}
 
 /* The following is for
 adding images with overlay */
@@ -129,21 +162,23 @@ adding images with overlay */
 }
 
 .imageSubText {
-	font-size: 16px;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
 	margin-left: 25px;
 	margin-right: 25px;
 	margin-top: 10px;
 	line-height: 20px;
 }
 
-.container:hover .image {
-  opacity: 0.3;
+.imageSubSubText {
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin-left: 25px;
+	margin-right: 25px;
+	line-height: 15px;
 }
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
 
 /* The following is for the
 copyright on bottom left of page */
