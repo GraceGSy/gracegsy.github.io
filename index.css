@@ -99,37 +99,37 @@ a:visited {
 	text-align: left;
 }
 
-#proj3 {
+#proj0 {
 	grid-column: 1/2;
 	grid-row: 1/2;
 }
 
-#text3 {
+#text0 {
 	grid-column: 2/3;
 	grid-row: 1/2;
 }
 
-#proj4 {
+#proj3 {
 	grid-column: 1/2;
 	grid-row: 2/3;
 }
 
-#proj8 {
+#proj4 {
 	grid-column: 1/2;
 	grid-row: 3/4;
 }
 
-#proj7 {
+#proj8 {
 	grid-column: 1/2;
 	grid-row: 4/5;
 }
 
-#proj6 {
+#proj7 {
 	grid-column: 1/2;
 	grid-row: 5/6;
 }
 
-#proj5 {
+#proj6 {
 	grid-column: 1/2;
 	grid-row: 6/7;
 }
