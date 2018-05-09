@@ -99,44 +99,39 @@ a:visited {
 	text-align: left;
 }
 
-#proj0 {
+#proj3 {
 	grid-column: 1/2;
 	grid-row: 1/2;
 }
 
-#text0 {
+#text3 {
 	grid-column: 2/3;
 	grid-row: 1/2;
 }
 
-#proj3 {
+#proj4 {
 	grid-column: 1/2;
 	grid-row: 2/3;
 }
 
-#proj4 {
+#proj8 {
 	grid-column: 1/2;
 	grid-row: 3/4;
 }
 
-#proj8 {
+#proj7 {
 	grid-column: 1/2;
 	grid-row: 4/5;
 }
 
-#proj7 {
+#proj6 {
 	grid-column: 1/2;
 	grid-row: 5/6;
 }
 
-#proj6 {
-	grid-column: 1/2;
-	grid-row: 6/7;
-}
-
 #proj2 {
 	grid-column: 1/2;
-	grid-row: 7/8;
+	grid-row: 6/7;
 }
 
 /* The following is for
