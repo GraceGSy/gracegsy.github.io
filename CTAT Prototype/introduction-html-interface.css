@@ -18,7 +18,7 @@
 	background-color: lightgray;
 	padding-left: 50px;
 	display: grid;
-	grid-template-columns: repeat(5, auto) 50% auto;
+	grid-template-columns: repeat(6, auto) 40%;
 	grid-gap: 20px;
 }
 
@@ -95,8 +95,7 @@
 
 #footer {
 	grid-area: footer;
-	color: white;
 	background-color: darkblue;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding: 50px;
+	color: white;
 }

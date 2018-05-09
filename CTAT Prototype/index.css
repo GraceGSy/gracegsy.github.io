@@ -19,15 +19,16 @@
 	background-color: lightgray;
 	padding-left: 50px;
 	display: grid;
-	grid-template-columns: repeat(5, auto) 50% auto;
+	grid-template-columns: repeat(6, auto) 40%;
 	grid-gap: 20px;
 }
 
 #download {
-	grid-column: 6/7;
+	grid-column: 8/9;
 	position: absolute;
-	right: 0px;
-	padding-right: 50px;
+	right: 50px;
+	top: 25px;
+	transform: translate(0, -50%);
 }
 
 #navButton {
@@ -68,15 +69,13 @@
 
 #about {
 	grid-area: about;
-	padding-left: 50px;
+	padding: 50px;
 }
 
 #tutor {
 	grid-area: tutor;
 	background-color: lightyellow;
-	padding-right: 50px;
-	padding-left: 50px;
-	padding-bottom: 50px;
+	padding: 50px;
 }
 
 #learnButton {
@@ -89,8 +88,7 @@
 #faq {
 	grid-area: faq;
 	text-align: center;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding: 50px;
 	background-color: lightgray;
 	display: grid;
 	grid-template-columns: repeat(3, auto);
@@ -98,16 +96,24 @@
 	grid-template-areas:
 		"txt txt txt"
 		"a b c"
-		"d e f";
+		"d e c";
 }
 
 #faqTitle {
 	grid-area: txt;
 }
 
+.qn {
+	text-align: left;
+}
+
+#c {
+	grid-area: c;
+}
+
 #footer {
 	grid-area: footer;
-	background-color: lightblue;
-	padding-left: 50px;
-	padding-right: 50px;
+	background-color: darkblue;
+	padding: 50px;
+	color: white;
 }

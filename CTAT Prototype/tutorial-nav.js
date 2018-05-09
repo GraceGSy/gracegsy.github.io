@@ -24,11 +24,17 @@ function next() {
   var index = elementID.slice(0, indexEnd);
   var index = parseInt(index);
   var newFocus = String(index+1) + "-a";
+  var textFocus = String(index) + "-text";
+  var newTextFocus = String(index+1) + "-text";
   var y = document.getElementById(newFocus);
+  var t = document.getElementById(textFocus);
+  var newT = document.getElementById(newTextFocus);
   x.classList.remove("focus");
   y.classList.add("focus");
   x.style.display = "none";
   y.style.display = "block";
+  t.style.display = "none";
+  newT.style.display = "block";
 }
 
 function back() {
@@ -39,11 +45,17 @@ function back() {
   var index = parseInt(index);
   if (index > 1) {
     var newFocus = String(index-1) + "-a";
+    var textFocus = String(index) + "-text";
+    var newTextFocus = String(index-1) + "-text"
     var y = document.getElementById(newFocus);
+    var t = document.getElementById(textFocus);
+    var newT = document.getElementById(newTextFocus)
     x.classList.remove("focus");
     y.classList.add("focus");
     x.style.display = "none";
     y.style.display = "block";
+    t.style.display = "none";
+    newT.style.display = "block";
   }
 }
 
