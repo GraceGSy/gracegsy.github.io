@@ -23,11 +23,13 @@
 }
 
 #download {
-	grid-column: 7/8;
+	grid-column: 8/9;
 	position: absolute;
-	right: 0px;
-	padding-right: 50px;
+	right: 50px;
+	top: 25px;
+	transform: translate(0, -50%);
 }
+
 
 #navButton {
 	height: 25px;
@@ -54,11 +56,16 @@
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	grid-template-rows: repeat(2, auto);
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .singleTutorial {
 	background-color: lightgray;
-	margin: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 25px;
+	margin-bottom: 20px;
 	padding: 20px;
 }
 

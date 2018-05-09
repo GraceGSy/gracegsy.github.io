@@ -88,7 +88,7 @@
 #faq {
 	grid-area: faq;
 	text-align: center;
-	padding: 50px;
+	padding: 25px;
 	background-color: lightgray;
 	display: grid;
 	grid-template-columns: repeat(3, auto);
@@ -101,10 +101,12 @@
 
 #faqTitle {
 	grid-area: txt;
+	margin-bottom: 0px;
 }
 
 .qn {
 	text-align: left;
+	padding: 25px;
 }
 
 #c {
