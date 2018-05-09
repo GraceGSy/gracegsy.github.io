@@ -1,0 +1,79 @@
+.majorGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 50px repeat(4, auto);
+	grid-template-areas:
+		"nav nav"
+		"banner banner"
+		"tutorials tutorials"
+		"footer footer";
+	margin: 0px;
+	min-width: 953px;
+}
+
+#nav {
+	display: flex;
+	align-items: center;
+	grid-area: nav;
+	background-color: lightgray;
+	padding-left: 50px;
+	display: grid;
+	grid-template-columns: repeat(5, auto) 50% auto;
+	grid-gap: 20px;
+}
+
+#download {
+	grid-column: 7/8;
+	position: absolute;
+	right: 0px;
+	padding-right: 50px;
+}
+
+#navButton {
+	height: 25px;
+	border-radius: 25px;
+	background-color: darkblue;
+	border: none;
+	font-size: 14px;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#banner {
+	grid-area: banner;
+	text-align: left;
+	font-size: 35px;
+	color: #fff;
+	background-color: darkblue;
+	padding-left: 50px;
+}
+
+.tutorials {
+	grid-area: tutorials;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(2, auto);
+}
+
+.singleTutorial {
+	background-color: lightgray;
+	margin: 50px;
+	padding: 20px;
+}
+
+.moreButton {
+	height: 20px;
+	background-color: darkblue;
+	border: none;
+	border-color: darkblue;
+	color: white;
+}
+
+#footer {
+	grid-area: footer;
+	color: white;
+	background-color: darkblue;
+	padding-left: 50px;
+	padding-right: 50px;
+}

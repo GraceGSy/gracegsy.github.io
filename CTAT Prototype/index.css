@@ -1,0 +1,113 @@
+.majorGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 50px repeat(4, auto);
+	grid-template-areas:
+		"nav nav"
+		"banner banner"
+		"about tutor"
+		"faq faq"
+		"footer footer";
+	margin: 0px;
+	min-width: 953px;
+}
+
+#nav {
+	display: flex;
+	align-items: center;
+	grid-area: nav;
+	background-color: lightgray;
+	padding-left: 50px;
+	display: grid;
+	grid-template-columns: repeat(5, auto) 50% auto;
+	grid-gap: 20px;
+}
+
+#download {
+	grid-column: 6/7;
+	position: absolute;
+	right: 0px;
+	padding-right: 50px;
+}
+
+#navButton {
+	height: 25px;
+	border-radius: 25px;
+	background-color: darkblue;
+	border: none;
+	font-size: 14px;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#banner {
+	grid-area: banner;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 35px;
+	color: #fff;
+	justify-content: center;
+}
+
+#bannerContainer {
+	position: absolute;
+}
+
+#bannerButton {
+	height: 50px;
+	border-radius: 25px;
+	background-color: #db8932;
+	border: none;
+	font-size: 14px;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#about {
+	grid-area: about;
+	padding-left: 50px;
+}
+
+#tutor {
+	grid-area: tutor;
+	background-color: lightyellow;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+}
+
+#learnButton {
+	background-color: darkblue;
+	color: white;
+	height: 30px;
+	border: none;
+}
+
+#faq {
+	grid-area: faq;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: lightgray;
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		"txt txt txt"
+		"a b c"
+		"d e f";
+}
+
+#faqTitle {
+	grid-area: txt;
+}
+
+#footer {
+	grid-area: footer;
+	background-color: lightblue;
+	padding-left: 50px;
+	padding-right: 50px;
+}
