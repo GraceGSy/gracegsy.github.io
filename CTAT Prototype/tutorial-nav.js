@@ -6,7 +6,7 @@ var timeOut = [0, 6500, 5000, 2300, 5000,
                 4000, 5200, 5900, 800,
                 2000, 3300, 2400]
 
-function play() {
+function play(n) {
   var x = (document.getElementsByClassName("focus"))[0];
   var elementID = x.id;
   var indexEnd = elementID.search("-");
@@ -49,18 +49,18 @@ function play() {
     x.classList.remove("focus");
     y.classList.add("focus");
     x.style.display = "none";
-    y.src = "html interface tutorial/" + String(index) + ".gif";
+    y.src = n + "/" + String(index) + ".gif";
     y.style.display = "block";
     var playButton = document.getElementById("play");
     playButton.src="images/playSuspended.png";
     setTimeout(function () {
       playButton.src="images/replay.png";
-      y.src = "html interface tutorial/" + String(index) + "-b.jpg";
+      y.src = n + "/" + String(index) + "-b.jpg";
     }, timeOut[index]);
   } else {
     var newFocus = String(index) + "-gif";
     var y = document.getElementById(newFocus);
-    y.src = "html interface tutorial/" + String(index) + ".gif";
+    y.src = n + "/" + String(index) + ".gif";
     var playButton = document.getElementById("play");
     playButton.src="images/playSuspended.png";
     setTimeout(function () {

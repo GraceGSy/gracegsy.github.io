@@ -15,12 +15,12 @@
 
 @font-face {
     font-family: "gotham-medium";
-    src: url(assets/GOTHAM-MEDIUM.ttf) format("truetype");
+    src: url(assets/GOTHAM-MEDIUM.TTF);
 }
 
 @font-face {
     font-family: "gotham-bold";
-    src: url(assets/GOTHAM-BOLD.ttf) format("truetype");
+    src: url(assets/GOTHAM-BOLD.TTF);
 }
 
 .majorGrid {
