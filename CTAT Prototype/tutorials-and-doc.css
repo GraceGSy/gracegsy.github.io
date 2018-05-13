@@ -42,7 +42,7 @@
 	align-items: center;
 	grid-area: nav;
 	background-color: #e8ebed;
-	padding-left: 50px;
+	padding-left: 80px;
 	display: grid;
 	grid-template-columns: repeat(6, auto) 40%;
 	grid-gap: 20px;
@@ -67,7 +67,7 @@ a:link, a:visited {
 #download {
 	grid-column: 8/9;
 	position: absolute;
-	right: 50px;
+	right: 80px;
 	top: 25px;
 	transform: translate(0, -50%);
 }
@@ -91,7 +91,7 @@ a:link, a:visited {
 	text-align: left;
 	color: #fff;
 	background: linear-gradient(#132b5e, #404978);
-	padding-left: 50px;
+	padding-left: 80px;
 	font-family: "sentinel-book";
 }
 
@@ -101,8 +101,8 @@ a:link, a:visited {
 	grid-template-rows: repeat(5, auto);
 	padding-top: 30px;
 	padding-bottom: 30px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 .singleTutorial {
@@ -139,8 +139,11 @@ a:link, a:visited {
 	grid-area: documentation;
 	display: grid;
 	grid-template-rows: repeat(4, auto);
-	grid-template-columns: repeat(3, auto);
+	grid-template-columns: repeat(3, 1fr);
 	padding-bottom: 30px;
+	padding-left: 80px;
+	padding-right: 80px;
+	grid-gap: 40px;
 }
 
 .docImage {
@@ -152,8 +155,6 @@ a:link, a:visited {
 	margin-bottom: 10px;
 	display: flex;
 	flex-direction: column;
-	margin-left: 50px;
-	margin-right: 50px;
 	cursor: pointer;
 }
 
@@ -180,6 +181,7 @@ a:link, a:visited {
 	grid-area: footer;
 	background: linear-gradient(#132b5e, #404978);
 	padding: 50px;
+	padding-left: 80px;
 	color: white;
 	font-family: "sentinel-book";
 	font-size: 14px;

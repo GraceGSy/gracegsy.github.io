@@ -1,6 +1,6 @@
 @font-face {
     font-family: "sentinel-book";
-    src: url(assets/sentinel-book.ttf);
+    src: url(assets/sentinel-book.ttf) format("truetype");
 }
 
 @font-face {
@@ -15,12 +15,12 @@
 
 @font-face {
     font-family: "gotham-medium";
-    src: url(assets/GOTHAM-MEDIUM.ttf);
+    src: url(assets/GOTHAM-MEDIUM.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "gotham-bold";
-    src: url(assets/GOTHAM-BOLD.ttf);
+    src: url(assets/GOTHAM-BOLD.ttf) format("truetype");
 }
 
 .majorGrid {
@@ -42,7 +42,7 @@
 	align-items: center;
 	grid-area: nav;
 	background-color: #e8ebed;
-	padding-left: 50px;
+	padding-left: 80px;
 	display: grid;
 	grid-template-columns: repeat(6, auto) 40%;
 	grid-gap: 20px;
@@ -67,7 +67,7 @@ a:link, a:visited {
 #download {
 	grid-column: 8/9;
 	position: absolute;
-	right: 50px;
+	right: 80px;
 	top: 25px;
 	transform: translate(0, -50%);
 }
@@ -93,7 +93,7 @@ a:link, a:visited {
 
 #bannerText {
 	font-family: "sentinel-book";
-	margin-left: 50px;
+	margin-left: 80px;
 	margin-right: 50px;
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -115,6 +115,8 @@ a:link, a:visited {
 #about {
 	grid-area: about;
 	padding: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
 	background-color: white;
 }
 
@@ -122,6 +124,8 @@ a:link, a:visited {
 	grid-area: tutor;
 	background-color: #ffc53d;
 	padding: 50px;
+	padding-right: 80px;
+	padding-left: 80px;
 }
 
 #learnButton {
@@ -135,7 +139,7 @@ a:link, a:visited {
 #faq {
 	grid-area: faq;
 	text-align: center;
-	padding: 25px;
+	padding: 55px;
 	background-color: #edf1f5;
 	display: grid;
 	grid-template-columns: repeat(3, auto);
@@ -183,6 +187,7 @@ a:link, a:visited {
 	grid-area: footer;
 	background: linear-gradient(#132b5e, #404978);
 	padding: 50px;
+	padding-left: 80px;
 	color: white;
 	font-family: "sentinel-book";
 	font-size: 14px;
