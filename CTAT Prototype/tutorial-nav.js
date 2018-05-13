@@ -6,7 +6,32 @@ function play() {
   var indexEnd = elementID.search("-");
   var index = elementID.slice(0, indexEnd);
   var index = parseInt(index);
-  if (elementID.includes("a")) {
+  if (index == 0) {
+    var b = document.getElementById("blackout");
+    b.style.opacity = "0.0";
+    var bt = document.getElementById("introButton");
+    bt.style.display = "none";
+    var newbt = document.getElementById("tuteButton");
+    newbt.style.display = "grid";
+    var newFocus = "1-a";
+    var y = document.getElementById(newFocus);
+    x.classList.remove("focus");
+    y.classList.add("focus");
+    x.style.display = "none";
+    y.style.display = "block";
+    var textFocus = String(index) + "-text";
+    var newTextFocus = String(index+1) + "-text";
+    var t = document.getElementById(textFocus);
+    var newT = document.getElementById(newTextFocus);
+    t.style.display = "none";
+    newT.style.display = "block";
+    var menuID = String(index) + "-menu";
+    var newMenuID = String(index+1) + "-menu";
+    var m = document.getElementById(menuID);
+    var newM = document.getElementById(newMenuID);
+    m.style.color = "black";
+    newM.style.color = "#00568d";
+  } else if (elementID.includes("a")) {
     var newFocus = String(index) + "-gif";
     var y = document.getElementById(newFocus);
     x.classList.remove("focus");
@@ -23,7 +48,7 @@ function next() {
   var indexEnd = elementID.search("-");
   var index = elementID.slice(0, indexEnd);
   var index = parseInt(index);
-  if (index < 3) {
+  if (index < 14 && index > 0) {
     var newFocus = String(index+1) + "-a";
     var textFocus = String(index) + "-text";
     var newTextFocus = String(index+1) + "-text";
@@ -36,6 +61,12 @@ function next() {
     y.style.display = "block";
     t.style.display = "none";
     newT.style.display = "block";
+    var menuID = String(index) + "-menu";
+    var newMenuID = String(index+1) + "-menu";
+    var m = document.getElementById(menuID);
+    var newM = document.getElementById(newMenuID);
+    m.style.color = "black";
+    newM.style.color = "#00568d";
   }
 }
 
@@ -45,7 +76,7 @@ function back() {
   var indexEnd = elementID.search("-");
   var index = elementID.slice(0, indexEnd);
   var index = parseInt(index);
-  if (index > 1) {
+  if (index > 0) {
     var newFocus = String(index-1) + "-a";
     var textFocus = String(index) + "-text";
     var newTextFocus = String(index-1) + "-text"
@@ -58,6 +89,20 @@ function back() {
     y.style.display = "block";
     t.style.display = "none";
     newT.style.display = "block";
+    var menuID = String(index) + "-menu";
+    var newMenuID = String(index-1) + "-menu";
+    var m = document.getElementById(menuID);
+    var newM = document.getElementById(newMenuID);
+    m.style.color = "black";
+    newM.style.color = "#00568d";
+    if (index == 1) {
+      var b = document.getElementById("blackout");
+      b.style.opacity = "1.0";
+      var newbt = document.getElementById("introButton");
+      newbt.style.display = "grid";
+      var bt = document.getElementById("tuteButton");
+      bt.style.display = "none";
+    }
   }
 }
 

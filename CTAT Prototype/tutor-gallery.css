@@ -1,10 +1,3 @@
-/*.major {
-	margin: 0px;
-	position: relative;
-	height: 100vh;
-	background-color: black;
-}*/
-
 @font-face {
     font-family: "sentinel-book";
     src: url(assets/sentinel-book.ttf);
@@ -32,14 +25,13 @@
 
 .majorGrid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr) 280px;
-	grid-template-rows: 50px auto 150px auto auto;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 50px repeat(3, auto);
 	grid-template-areas:
-		"nav nav nav nav"
-		"banner banner banner banner"
-		"intro intro intro menu"
-		"tutor tutor tutor menu"
-		"footer footer footer footer";
+		"nav nav"
+		"banner banner"
+		"tutors tutors"
+		"footer footer";
 	margin: 0px;
 	min-width: 953px;
 }
@@ -102,142 +94,49 @@ a:link, a:visited {
 	font-family: "sentinel-book";
 }
 
-.copy {
-	grid-area:intro;
-	margin-left: 50px;
-	margin-top: 50px;
-	font-family: "sentinel-book";
-	font-size: 16px;
+.text {
+	margin-top: 10px;
 }
 
-/*.overlay {
-	bottom: 0px;
-	width: 100%;
-	height: 150px;
-	z-index: 2;
-	background-color: #fff;
-	border-top: solid 1px;
-	text-align: center;
-}*/
-
-.tutor {
-	grid-area: tutor;
-	margin-top: 50px;
-	margin-left: 50px;
-	margin-right: 0px;
-	margin-bottom: 100px;
-	position: relative;
-}
-
-.buttons {
+.tutors {
+	grid-area: tutors;
 	display: grid;
+	grid-template-rows: repeat(2, auto);
 	grid-template-columns: repeat(3, auto);
-	grid-template-areas:
-		"back play next";
-	background-color: white;
-	position: absolute;
-	z-index: 4;
-	bottom: 20px;
-	left: 50%;
-	transform: translate(-50%, 0%);
+	padding-bottom: 50px;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	grid-gap: 40px;
+}
+
+.singleTutor {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	background-color: #f0f1f2;
+	padding: 20px;
+}
+
+.tbutton {
+	cursor: pointer;
+	font-family: "gotham-medium";
+	font-size: 14px;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-#introButton {
-	background-color: rgba(0, 0, 0, 0);
-}
-
-#tuteButton {
-	box-shadow: 0px 0px 10px #d3d3d3;
-}
-
-.button2 {
-	margin: 15px;
-	margin-top: 12px;
-	margin-bottom: 10px;
-	padding: 0px;
-	top: 50%;
-}
-
-.buttonImg {
-	margin: 0px;
-	padding: 0px;
-}
-
-#blackout {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
-	transition: 0.5s ease;
-	z-index: 3;
-}
-
-#blackoutText {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+	background-color: #203573;
 	color: white;
-	transform: translate(-50%, -50%);
-	font-family: 'sentinel-book';
-	font-size: 20px;
+	height: 30px;
+	width: 50%;
+	border: none;
+	border-radius: 15px;
+	margin-top: 20px;
 }
 
-#menu {
-	grid-area: menu;
-	text-align: left;
-}
-
-.menuText {
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-top: 0px;
-	font-family: "sentinel-book";
-	font-size: 16px;
-}
-
-.menuTitle {
-	margin-left: 50px;
-}
-
-.menuSubTitle {
-	margin-left: 80px;
-}
-
-.menuHeader {
-	margin-top: 50px;
-	font-family: "sentinel-semibold";
-	font-size: 21px;
-	border-bottom: 2px solid;
-}
-
-.interface {
+.tutorImage {
 	width: 100%;
-}
-
-.title {
-	font-family: "gotham-bold";
-}
-
-/*#finalRef {
-	width: 200px;
-	padding-left: 25px;
-	padding-right: 25px;
-}*/
-
-.backButton {
-	grid-area: back;
-	padding-top: 6px;
-}
-
-.playButton {
-	grid-area: play;
-}
-
-.skipButton {
-	grid-area: next;
-	padding-top: 6px;
 }
 
 .sectionHeader {
@@ -257,6 +156,14 @@ a:link, a:visited {
 	font-size: 14px;
 	line-height: 1.5;
 	color: #333333;
+}
+
+.tbody {
+	font-family: "sentinel-book";
+	font-size: 14px;
+	color: #333333;
+	line-height: 1.5;
+	margin: 0px;
 }
 
 #footer {
