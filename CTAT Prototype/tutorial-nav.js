@@ -1,5 +1,11 @@
 //- Grace Guo
 //- May 8 2018
+
+var timeOut = [0, 6500, 5000, 2300, 5000,
+                6300, 6800, 5800, 3000,
+                4000, 5200, 5900, 800,
+                2000, 3300, 2400]
+
 function play() {
   var x = (document.getElementsByClassName("focus"))[0];
   var elementID = x.id;
@@ -30,7 +36,7 @@ function play() {
     var m = document.getElementById(menuID);
     var newM = document.getElementById(newMenuID);
     m.style.color = "black";
-    newM.style.color = "#00568d";
+    newM.style.color = "#0056ad";
   } else if (elementID.includes("a")) {
     var newFocus = String(index) + "-gif";
     var y = document.getElementById(newFocus);
@@ -38,7 +44,22 @@ function play() {
     y.classList.add("focus");
     x.style.display = "none";
     y.style.display = "block";
+    y.src = y.src;
+    var playButton = document.getElementById("play")
+    playButton.src="images/playSuspended.png";
+    setTimeout(function () {
+      playButton.src="images/replay.png";
+      y.src = "html interface tutorial/" + String(index) + "-b.jpg";
+    }, timeOut[index]);
   } else {
+    var newFocus = String(index) + "-gif";
+    var y = document.getElementById(newFocus);
+    y.src = "html interface tutorial/" + String(index) + ".gif";
+    var playButton = document.getElementById("play")
+    playButton.src="images/playSuspended.png";
+    setTimeout(function () {
+      playButton.src="images/replay.png";
+    }, timeOut[index]);
   }
 }
 
@@ -48,7 +69,7 @@ function next() {
   var indexEnd = elementID.search("-");
   var index = elementID.slice(0, indexEnd);
   var index = parseInt(index);
-  if (index < 14 && index > 0) {
+  if (index < 15 && index > 0) {
     var newFocus = String(index+1) + "-a";
     var textFocus = String(index) + "-text";
     var newTextFocus = String(index+1) + "-text";
@@ -66,7 +87,7 @@ function next() {
     var m = document.getElementById(menuID);
     var newM = document.getElementById(newMenuID);
     m.style.color = "black";
-    newM.style.color = "#00568d";
+    newM.style.color = "#0056ad";
   }
 }
 
@@ -94,7 +115,7 @@ function back() {
     var m = document.getElementById(menuID);
     var newM = document.getElementById(newMenuID);
     m.style.color = "black";
-    newM.style.color = "#00568d";
+    newM.style.color = "#0056ad";
     if (index == 1) {
       var b = document.getElementById("blackout");
       b.style.opacity = "1.0";

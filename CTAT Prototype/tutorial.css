@@ -32,7 +32,7 @@
 
 .majorGrid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr) 280px;
+	grid-template-columns: repeat(3, 1fr) 300px;
 	grid-template-rows: 50px auto 150px auto auto;
 	grid-template-areas:
 		"nav nav nav nav"
@@ -199,10 +199,12 @@ a:link, a:visited {
 
 .menuTitle {
 	margin-left: 50px;
+	margin-bottom: 12px;
 }
 
 .menuSubTitle {
 	margin-left: 80px;
+	margin-bottom: 12px;
 }
 
 .menuHeader {
