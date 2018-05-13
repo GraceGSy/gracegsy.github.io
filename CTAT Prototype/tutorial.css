@@ -261,6 +261,10 @@ a:link, a:visited {
 	color: #333333;
 }
 
+.cursor {
+	cursor: pointer;
+}
+
 #footer {
 	grid-area: footer;
 	background: linear-gradient(#132b5e, #404978);

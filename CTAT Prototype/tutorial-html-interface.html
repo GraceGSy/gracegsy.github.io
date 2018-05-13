@@ -24,9 +24,10 @@
 
 		<div class="copy">
 
-			<div id="0-text">
+			<div id="0-text" class="textFocus">
 				<p class="title">Introduction</p>
-				<p class="body">Introductory text here</p>
+				<p class="body">In this tutorial, you will create a student interface for solving fraction addition problems using the CTAT HTML Editor.</p>
+				<p class="body">Please note: if you've never used the CTAT HTML Editor, please see the requirements and instructions. You will need a Google Drive or Dropbox account.</p>
 			</div>
 
 			<div id="1-text" style="display:none;">
@@ -113,15 +114,15 @@
 		<div class="tutor">
 
 			<div id="introButton" class="buttons">
-				<a onclick="back()" class="button2 backButton"><img class="buttonImg" src="images/backWhite.png"></a>
-				<a onclick="play()" class="button2 playButton"><img class="buttonImg" src="images/playWhite.png"></a>
-				<a onclick="next()" class="button2 skipButton"><img class="buttonImg" src="images/skipWhite.png"></a>
+				<a onclick="back()" class="button2 backButton cursor"><img class="buttonImg" src="images/backWhite.png"></a>
+				<a onclick="play()" class="button2 playButton cursor"><img class="buttonImg" src="images/playWhite.png"></a>
+				<a onclick="next()" class="button2 skipButton cursor"><img class="buttonImg" src="images/skipWhite.png"></a>
 			</div>
 
 			<div id="tuteButton" class="buttons" style="display:none;">
-				<a onclick="back()" class="button2 backButton" id="back"><img class="buttonImg" src="images/back.png"></a>
-				<a onclick="play()" class="button2 playButton"><img  id="play" class="buttonImg" src="images/play.png"></a>
-				<a onclick="next()" class="button2 skipButton" id="next"><img class="buttonImg" src="images/skip.png"></a>
+				<a onclick="back()" class="button2 backButton cursor" id="back"><img class="buttonImg" src="images/back.png"></a>
+				<a onclick="play()" class="button2 playButton cursor"><img  id="play" class="buttonImg" src="images/play.png"></a>
+				<a onclick="next()" class="button2 skipButton cursor" id="next"><img class="buttonImg" src="images/skip.png"></a>
 			</div>
 
 			<div id="blackout">
@@ -179,25 +180,25 @@
 
 		<div id="menu">
 			<p id="" style="margin-top: 66px;" class="menuText sectionHeader">Table of Contents</p>
-			<p id="0-menu" class="menuText menuTitle" style="color:#00568d;">Introduction</p>
+			<p id="0-menu" class="menuText menuTitle cursor" style="color:#00568d;" onclick="menuJump(this)">Introduction</p>
 			<p id="" class="menuText menuTitle">Creating a Package</p>
-			<p id="1-menu" class="menuText menuSubTitle">New Package</p>
+			<p id="1-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">New Package</p>
 			<p id="" class="menuText menuTitle">Creating the Interface</p>
-			<p id="2-menu" class="menuText menuSubTitle">Text Input Fields</p>
-			<p id="3-menu" class="menuText menuSubTitle">Component IDs</p>
-			<p id="4-menu" class="menuText menuSubTitle">Copy and Paste</p>
-			<p id="5-menu" class="menuText menuSubTitle">Add Static Text</p>
-			<p id="6-menu" class="menuText menuSubTitle">Styling Text</p>
-			<p id="7-menu" class="menuText menuSubTitle">Adding More Text</p>
-			<p id="8-menu" class="menuText menuSubTitle">Creating Lines (1)</p>
-			<p id="9-menu" class="menuText menuSubTitle">Creating Lines (2)</p>
-			<p id="10-menu" class="menuText menuSubTitle">Creating Lines (3)</p>
-			<p id="11-menu" class="menuText menuSubTitle">Adding Math Symbols</p>
-			<p id="12-menu" class="menuText menuSubTitle">The Hint Widget</p>
+			<p id="2-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Text Input Fields</p>
+			<p id="3-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Component IDs</p>
+			<p id="4-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Copy and Paste</p>
+			<p id="5-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Add Static Text</p>
+			<p id="6-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Styling Text</p>
+			<p id="7-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Adding More Text</p>
+			<p id="8-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Creating Lines (1)</p>
+			<p id="9-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Creating Lines (2)</p>
+			<p id="10-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Creating Lines (3)</p>
+			<p id="11-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Adding Math Symbols</p>
+			<p id="12-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">The Hint Widget</p>
 			<p id="" class="menuText menuTitle">Saving</p>
-			<p id="13-menu" class="menuText menuSubTitle">Save to Package</p>
-			<p id="14-menu" class="menuText menuSubTitle">Choose Package</p>
-			<p id="15-menu" class="menuText menuSubTitle">Name the Interface</p>
+			<p id="13-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Save to Package</p>
+			<p id="14-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Choose Package</p>
+			<p id="15-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Name the Interface</p>
 		</div>
 			
 
