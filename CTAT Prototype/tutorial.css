@@ -76,7 +76,7 @@ a:link, a:visited {
 	justify-self: end;
 	align-content: center;
 	top: 25px;
-	margin-right: 80px; 
+	margin-right: 80px;
 }
 
 #navButton {
@@ -192,6 +192,7 @@ a:link, a:visited {
 	text-align: left;
 	width: 300px;
 	transition: 1.5s;
+	margin-bottom: 50px;
 }
 
 .menuText {
