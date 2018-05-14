@@ -44,7 +44,7 @@
 	background-color: #e8ebed;
 	padding-left: 80px;
 	display: grid;
-	grid-template-columns: repeat(6, auto) 40%;
+	grid-template-columns: repeat(6, auto);
 	grid-gap: 20px;
 	font-family: "gotham-medium";
 	font-size: 14px;
@@ -65,11 +65,11 @@ a:link, a:visited {
 }
 
 #download {
-	grid-column: 8/9;
-	position: absolute;
-	right: 80px;
+	grid-column: 6/7;
+	justify-self: end;
+	align-content: center;
 	top: 25px;
-	transform: translate(0, -50%);
+	margin-right: 80px; 
 }
 
 #navButton {
