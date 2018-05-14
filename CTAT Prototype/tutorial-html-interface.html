@@ -111,6 +111,7 @@
 		</div>
 
 		<div class="tutor">
+			<div class="tutorWrapper">
 
 			<div id="introButton" class="buttons">
 				<a onclick="back()" class="button2 backButton cursor"><img class="buttonImg" src="images/backWhite.png"></a>
@@ -128,7 +129,7 @@
 				<p id="blackoutText">Click Play to Get Started</p>
 			</div>
 
-			<img class="interface focus" id="0-a" src="html interface tutorial/1-a.jpg">
+			<img class="interface focus" id="0-a" src="html interface tutorial/0-a.jpg">
 
 			<img class="interface" id="1-a" style="display:none;" src="html interface tutorial/1-a.jpg">
 			<img class="interface" style="display:none;" id="1-gif" src="html interface tutorial/1.gif">
@@ -174,11 +175,12 @@
 
 			<img class="interface" id="15-a" style="display:none;" src="html interface tutorial/15-a.jpg">
 			<img class="interface" style="display:none;" id="15-gif" src="html interface tutorial/15.gif">
+			</div>
 
 		</div>
 
 		<div id="menu">
-			<p id="" style="margin-top: 66px;" class="menuText sectionHeader">Table of Contents</p>
+			<p style="margin-top: 66px;" class="menuText sectionHeader" onclick="collapse()">Table of Contents</p>
 			<p id="0-menu" class="menuText menuTitle cursor" style="color:#00568d;" onclick="menuJump(this)">Introduction</p>
 			<p id="" class="menuText menuTitle">Creating a Package</p>
 			<p id="1-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">New Package</p>

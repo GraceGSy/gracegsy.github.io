@@ -195,3 +195,13 @@ function menuJump(x) {
   var playButton = document.getElementById("play");
   playButton.src = "images/play.png";
 }
+
+function collapse() {
+  var x = document.getElementById("menu");
+  x.style.width = "80px";
+  var y = document.getElementsByClassName("menuText");
+  for (var i = 0; i < y.length; i++) {
+    var z = y[i];
+    z.style.display = "none";
+  }
+}
