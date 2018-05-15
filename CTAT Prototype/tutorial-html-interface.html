@@ -116,13 +116,13 @@
 			<div id="introButton" class="buttons">
 				<a onclick="back()" class="button2 backButton cursor"><img class="buttonImg" src="images/backWhite.png"></a>
 				<a onclick="play('html interface tutorial')" class="button2 playButton cursor"><img class="buttonImg" src="images/playWhite.png"></a>
-				<a onclick="next()" class="button2 skipButton cursor"><img class="buttonImg" src="images/skipWhite.png"></a>
+				<a onclick="next('html interface tutorial')" class="button2 skipButton cursor"><img class="buttonImg" src="images/skipWhite.png"></a>
 			</div>
 
 			<div id="tuteButton" class="buttons" style="display:none;">
 				<a onclick="back()" class="button2 backButton cursor" id="back"><img class="buttonImg" src="images/back.png"></a>
 				<a onclick="play('html interface tutorial')" class="button2 playButton cursor"><img  id="play" class="buttonImg" src="images/play.png"></a>
-				<a onclick="next()" class="button2 skipButton cursors" id="next"><img class="buttonImg" src="images/skip.png"></a>
+				<a onclick="next('html interface tutorial')" class="button2 skipButton cursors" id="next"><img class="buttonImg" src="images/skip.png"></a>
 			</div>
 
 			<div id="blackout">
@@ -180,7 +180,7 @@
 		</div>
 
 		<div id="menu">
-			<p style="margin-top: 66px;" class="menuText sectionHeader" onclick="collapse()">Table of Contents</p>
+			<p style="margin-top: 66px;" class="menuText sectionHeader">Table of Contents</p>
 			<p id="0-menu" class="menuText menuTitle cursor" style="color:#00568d;" onclick="menuJump(this)">Introduction</p>
 			<p id="" class="menuText menuTitle">Creating a Package</p>
 			<p id="1-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">New Package</p>

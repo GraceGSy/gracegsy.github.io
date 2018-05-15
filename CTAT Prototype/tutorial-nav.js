@@ -1,10 +1,12 @@
 //- Grace Guo
 //- May 8 2018
 
-var timeOut = [0, 6500, 5000, 2300, 5000,
-                6300, 6800, 5800, 3000,
-                4000, 5200, 5900, 800,
-                2000, 3300, 2400]
+var timeOut = {"html interface tutorial": [0, 6500, 5000, 2300, 5000,
+                6300, 6800, 5800, 3000, 4000, 5200, 5900, 800,
+                2000, 3300, 2400],
+                "example tracing tutorial": [0, 4500, 5000, 5000, 3500,
+                4300, 5500, 1000, 1500, 1500, 6000, 4500, 8000,
+                2500, 8000, 2000, 7740]}
 
 function play(n) {
   var x = (document.getElementsByClassName("focus"))[0];
@@ -56,7 +58,7 @@ function play(n) {
     setTimeout(function () {
       playButton.src="images/replay.png";
       y.src = n + "/" + String(index) + "-b.jpg";
-    }, timeOut[index]);
+    }, (timeOut[n])[index]);
   } else {
     var newFocus = String(index) + "-gif";
     var y = document.getElementById(newFocus);
@@ -65,17 +67,18 @@ function play(n) {
     playButton.src="images/playSuspended.png";
     setTimeout(function () {
       playButton.src="images/replay.png";
-    }, timeOut[index]);
+    }, (timeOut[n])[index]);
   }
 }
 
-function next() {
+function next(n) {
   var x = (document.getElementsByClassName("focus"))[0];
   var elementID = x.id;
   var indexEnd = elementID.search("-");
   var index = elementID.slice(0, indexEnd);
   var index = parseInt(index);
-  if (index < 15 && index > 0) {
+  var l = (timeOut[n].length)-1;
+  if (index < l && index > 0) {
     var newFocus = String(index+1) + "-a";
     var textFocus = String(index) + "-text";
     var newTextFocus = String(index+1) + "-text";

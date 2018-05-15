@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Building an HTML Student Interface</title>
+		<title>Creating an Example-Tracing Tutor</title>
 		<link rel="stylesheet" type="text/css" href="tutorial.css">
 	</head>
 	<body class="majorGrid">
@@ -18,24 +18,24 @@
 		</div>
 		<div id="banner">
 			<p id="bannerText">Creating an Example-Tracing Tutor</p>
-			<p class="body" style="width:50%;padding-bottom:50px;color:#fff;">Learn to create a student interface for solving fraction addition problems using the CTAT HTML Editor. No coding, no fuss.</p>
+			<p class="body" style="width:50%;padding-bottom:50px;color:#fff;">Learn to use CTAT's Behavior Recorder to build an Example-tracing fraction addition tutor (requires a completed student interface). This tutor is authored by demonstration, without programming.</p>
 		</div>
 
 		<div class="copy">
 
 			<div id="0-text" class="textFocus">
 				<p class="title">Introduction</p>
-				<p class="body">In this tutorial, you will create a student interface for solving fraction addition problems using the CTAT HTML Editor.</p>
-				<p class="body">Please note: if you've never used the CTAT HTML Editor, please see the requirements and instructions. You will need a Google Drive or Dropbox account.</p>
+				<p class="body">In this tutorial, you will use CTAT's Behavior Recorder to author an Example-tracing Tutor for a basic fraction addition problem. Click here to learn more about Example-tracing Tutors.</p>
+				<p class="body"><b>Note:</b> You will need an already-complete HTML interface. See our <a href="tutorial-html-interface.html" style="color:#0056ad">HTML interface tutorial</a> if you need to create one first.</p>
 			</div>
 
 			<div id="1-text" style="display:none;">
-				<p class="title">Launching the HTML Interface (1)</p>
+				<p class="title">Launching the HTML Interface</p>
 				<p class="body">From the CTAT application, click <b>Launch HTML Interface</b> (Cmd/Ctrl + I). This prompt will open your files. Go into your Fraction Addition package, and locate the HTML file. Make sure you select the <b>.html file</b>, not the .ed.html file.</p>
 			</div>
 
 			<div id="2-text" style="display:none;">
-				<p class="title">Launching the HTML Interface (2)</p>
+				<p class="title">Setting up Your Workspace (optional)</p>
 				<p class="body">After launching, you’ll have 2 windows open: the student interface and the behavior graph. You may want to adjust your windows so that you can see them side by side.</p>
 			</div>
 
@@ -55,38 +55,38 @@
 			</div>
 
 			<div id="6-text" style="display:none;">
-				<p class="title">Author Mode: Demonstrate (1)</p>
-				<p class="body">After you name the state, the Author Mode will automatically switch to <b>Demonstrate mode</b>. Input a possible solution to the problem - in this mode you’re “demonstrating” a correct path. Note how the graph records that actions you take.</p>
+				<p class="title">Demonstrate</p>
+				<p class="body">Click and drag to adjust the Text Field boundaries. Under <b>Font</b> in the Properties panel, you can set your desired text size, font, and color (make sure the Text Field is selected).</p>
 			</div>
 
 			<div id="7-text" style="display:none;">
-				<p class="title">Author Mode: Demonstrate (2)</p>
+				<p class="title">Done</p>
 				<p class="body">When your solution is complete, hit <b>Done</b>. This indicates to the graph that the path it recorded is complete.</p>
 			</div>
 
 			<div id="8-text" style="display:none;">
-				<p class="title">Author Mode: Demonstrate (3)</p>
+				<p class="title">Return to Start State</p>
 				<p class="body">After you finish demonstrating a path, return to the <b>Start State</b> by clicking on it. From this state, you can create another path or perform a number of other actions.</p>
 			</div>
 
 			<div id="9-text" style="display:none;">
-				<p class="title">Author Mode: Test Tutor (1)</p>
+				<p class="title">Test Tutor</p>
 				<p class="body">Enter <b>Test Tutor mode</b> to iteratively test your tutor. To test from the beginning, click the Start State in the behavior graph. To test from any other step in the problem, click the desired problem-solving state and the student interface will update accordingly.</p>
 			</div>
 
 			<div id="10-text" style="display:none;">
-				<p class="title">Author Mode: Test Tutor (2)</p>
+				<p class="title">Test Demonstrated Solution</p>
 				<p class="body">Try inputting the path you just inputted. CTAT recognizes the path in the graph as a correct solution, and if you input the same values, the interface should show feedback that the solution is correct.</p>
 			</div>
 
 			<div id="11-text" style="display:none;">
-				<p class="title">Author Mode: Test Tutor (3)</p>
+				<p class="title">Test Alternative Solution</p>
 				<p class="body">Now try a different correct solution. You’ll see that CTAT does NOT recognize this solution as correct, because it isn’t recorded in the behavior graph.</p>
 			</div>
 
 			<div id="12-text" style="display:none;">
-				<p class="title">Author Mode: Demonstrate</p>
-				<p class="body">Here we will demonstrate another path. In your own tutors, try to think of different ways that students might go about solving the problem. With multiple paths recorded in the graph, you can provide feedback for a variety of approaches.</p>
+				<p class="title">Demonstrate Alternative Solution</p>
+				<p class="body">Here we’ll demonstrate another path. In your own tutors, try to think of different ways that students might go about solving the problem. With multiple paths recorded in the graph, you can provide feedback for a variety of approaches.</p>
 			</div>
 
 			<div id="13-text" style="display:none;">
@@ -95,12 +95,12 @@
 			</div>
 
 			<div id="14-text" style="display:none;">
-				<p class="title">Hint Messages (1)</p>
-				<p class="body">If a student gets stuck, they may consult the tutor for hints. Choose a solution path and select <b>Edit Hint and Success Messages</b>, and enter a hint to help students arrive at that problem-solving approach.</p>
+				<p class="title">Set Hint Messages</p>
+				<p class="body">From <b>Package Name</b>, select the package you created earlier, in step 1. Your interface will be saved in this folder.</p>
 			</div>
 
 			<div id="15-text" style="display:none;">
-				<p class="title">Hint Messages (2)</p>
+				<p class="title">Test Hint Messages</p>
 				<p class="body">In <b>Test Tutor mode</b>, you can test if your Hint message appears as expected. Hit the Hint button in the Hint Widget.</p>
 			</div>
 
@@ -111,24 +111,25 @@
 		</div>
 
 		<div class="tutor">
+			<div class="tutorWrapper">
 
 			<div id="introButton" class="buttons">
 				<a onclick="back()" class="button2 backButton cursor"><img class="buttonImg" src="images/backWhite.png"></a>
 				<a onclick="play('example tracing tutorial')" class="button2 playButton cursor"><img class="buttonImg" src="images/playWhite.png"></a>
-				<a onclick="next()" class="button2 skipButton cursor"><img class="buttonImg" src="images/skipWhite.png"></a>
+				<a onclick="next('example tracing tutorial')" class="button2 skipButton cursor"><img class="buttonImg" src="images/skipWhite.png"></a>
 			</div>
 
 			<div id="tuteButton" class="buttons" style="display:none;">
 				<a onclick="back()" class="button2 backButton cursor" id="back"><img class="buttonImg" src="images/back.png"></a>
 				<a onclick="play('example tracing tutorial')" class="button2 playButton cursor"><img  id="play" class="buttonImg" src="images/play.png"></a>
-				<a onclick="next()" class="button2 skipButton cursors" id="next"><img class="buttonImg" src="images/skip.png"></a>
+				<a onclick="next('example tracing tutorial')" class="button2 skipButton cursors" id="next"><img class="buttonImg" src="images/skip.png"></a>
 			</div>
 
 			<div id="blackout">
 				<p id="blackoutText">Click Play to Get Started</p>
 			</div>
 
-			<img class="interface focus" id="0-a" src="example tracing tutorial/1-a.jpg">
+			<img class="interface focus" id="0-a" src="example tracing tutorial/0-a.jpg">
 
 			<img class="interface" id="1-a" style="display:none;" src="example tracing tutorial/1-a.jpg">
 			<img class="interface" style="display:none;" id="1-gif" src="example tracing tutorial/1.gif">
@@ -174,30 +175,36 @@
 
 			<img class="interface" id="15-a" style="display:none;" src="example tracing tutorial/15-a.jpg">
 			<img class="interface" style="display:none;" id="15-gif" src="example tracing tutorial/15.gif">
+			</div>
+
+			<img class="interface" id="16-a" style="display:none;" src="example tracing tutorial/16-a.jpg">
+			<img class="interface" style="display:none;" id="15-gif" src="example tracing tutorial/16.gif">
+			</div>
 
 		</div>
 
 		<div id="menu">
-			<p id="" style="margin-top: 66px;" class="menuText sectionHeader">Table of Contents</p>
+			<p style="margin-top: 66px;" class="menuText sectionHeader">Table of Contents</p>
 			<p id="0-menu" class="menuText menuTitle cursor" style="color:#00568d;" onclick="menuJump(this)">Introduction</p>
-			<p id="" class="menuText menuTitle">Creating a Package</p>
-			<p id="1-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">New Package</p>
-			<p id="" class="menuText menuTitle">Creating the Interface</p>
-			<p id="2-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Text Input Fields</p>
-			<p id="3-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Component IDs</p>
-			<p id="4-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Copy and Paste</p>
-			<p id="5-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Add Static Text</p>
-			<p id="6-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Styling Text</p>
-			<p id="7-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Adding More Text</p>
-			<p id="8-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Creating Lines (1)</p>
-			<p id="9-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Creating Lines (2)</p>
-			<p id="10-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Creating Lines (3)</p>
-			<p id="11-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Adding Math Symbols</p>
-			<p id="12-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">The Hint Widget</p>
-			<p id="" class="menuText menuTitle">Saving</p>
-			<p id="13-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Save to Package</p>
-			<p id="14-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Choose Package</p>
-			<p id="15-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Name the Interface</p>
+			<p id="" class="menuText menuTitle">Set Start State</p>
+			<p id="1-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Launching the HTML Interface</p>
+			<p id="2-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Setting up Your Workspace (optional)</p>
+			<p id="3-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Initial State</p>
+			<p id="4-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Start State (1)</p>
+			<p id="5-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Start State (2)</p>
+			<p id="" class="menuText menuTitle">Demonstrating a Solution</p>
+			<p id="6-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Demonstrate</p>
+			<p id="7-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Done</p>
+			<p id="8-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Return to Start State</p>
+			<p id="" class="menuText menuTitle">Testing a Solution</p>
+			<p id="9-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Test Tutor</p>
+			<p id="10-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Test Demonstrated Solution</p>
+			<p id="11-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Test Alternative Solution</p>
+			<p id="12-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Demonstrate Alternative Solution</p>
+			<p id="" class="menuText menuTitle">Errors and Hints</p>
+			<p id="13-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Incorrect Actions (bugs)</p>
+			<p id="14-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Set Hint Messages</p>
+			<p id="15-menu" class="menuText menuSubTitle cursor" onclick="menuJump(this)">Test Hint Messages</p>
 		</div>
 			
 
