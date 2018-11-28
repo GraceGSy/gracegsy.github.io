@@ -27,7 +27,7 @@
 .majorGrid {
 	display: grid;
 	grid-template-columns: 1fr 6fr 1fr;
-	grid-template-rows: 75px auto 50px;
+	grid-template-rows: 150px auto 50px;
 	grid-gap: 10px 8px;
 	grid-template-areas:
 		"space1 header space2"
@@ -44,10 +44,10 @@
 }
 
 .name {
-	font-family: "sentinel-book", Georgia, serif;
-	font-size: 30px;
-	font-weight: 600;
+	font-family: 'Lato', sans-serif;
 	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 50px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -102,7 +102,7 @@ body content */
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(7, auto);
 	grid-gap: 30px 30px;
-	margin-top: 25px;
+	margin-top: 100px;
 }
 
 
