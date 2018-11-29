@@ -95,7 +95,7 @@ body content */
 .wrapper2 {
 	grid-area: contents;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 400;
 	line-height: 20px;
 	display: grid;
@@ -141,7 +141,7 @@ adding images with overlay */
 	bottom: 0%;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.5);
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 15px;
 }
 
@@ -241,7 +241,7 @@ content paragraphs */
 copyright on bottom left of page */
 #item3 {
 	grid-area: copyright;
-	font-family: "sentinel-book", Georgia, serif;
+	font-family: "Lato", Helvetica, sans-serif;
 	font-size: 14px;
 	letter-spacing: 1px;
 }

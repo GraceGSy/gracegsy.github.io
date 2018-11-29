@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grace Guo | Vue Graphics Grammar</title>
+		<link rel="stylesheet" type="text/css" href="vuegg.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	</head>
+	<body class="majorGrid">
+
+		<div class="wrapper" style="margin-top:100px">
+			<a href="index.html"><p class="name"><span style="color:black">Grace</span> <span style="color:#2f8480">Guo</span></p></a>
+			<div>
+				<a class="text" id="link1" href="index.html">projects</a>
+				<a class="text" id="link2" href="files/resume.pdf">resume</a>
+			</div>
+		</div>
+
+		<div class="wrapper2">
+			
+			<div class="metaInfo">
+				<h2 class="pName">Vue Graphics Grammar</h2>
+				<p style="margin:0px">SUTD Spatial Networks Lab</p>
+			</div>
+
+			<p class="contents" id="one" style="margin:0px">The Grammar of Graphics</p>
+			<p class="contents" id="two" style="margin:0px">Componentized Visualizations</p>
+			<p class="contents" id="three" style="margin:0px">Applications</p>
+
+			<div class="container">
+				<img class="image" src="images/Vue img1.svg">
+				<div class="overlay">
+					<p class="imageText">Examples of graphs made using the Vue Graphics Grammar library.</p>
+				</div>
+			</div>
+			
+			
+			<div id="partzero">
+				<p style="margin-top:0px">
+					Vue Graphics Grammar is a library for componentized data visualization implemented in the Vue framework. The library adapts the original grammar first proposed by Hadley Wickam in his paper <a href="http://vita.had.co.nz/papers/layered-grammar.pdf">A Layered Grammar of Graphics</a> and allows for the creation of flexible, customized graphs through different combinations of components.
+				</p>
+				<p class="paragraph">
+					The github repo is not yet public, but preliminary documentation with example implementations is available <a href="https://spatialnetworkslab.github.io/docs-vue-graphics-grammar/">here</a>.
+				</p>
+
+			</div>
+			<div id="partone">
+				<p class="paragraph">
+					The grammar of graphics seeks to 'move beyond named graphics' and gain deeper insight into the steps that go into the creation of these graphics. These steps generally start with some raw data, which are then mapped onto visual aesthetics (x, y positions, color, size etc.). These visual aesthetics are used to create geometries (points, rectangles, lines), which when combined with faceting, statistical transformations, coordinates and themes can be used to create a wide range of graphs without being restricted to a few common data visualizations.
+				</p>
+				<div class="container">
+					<img class="image" src="images/vue img2.png">
+					<div class="overlay">
+						<p class="imageText">Order of layers in the grammar of graphics, starting with raw data and working upwards to a final visualization.</p>
+					</div>
+				</div>
+			</div>
+			<div id="parttwo">
+				<p class="paragraph">
+					This library adapts the grammar of graphics by creating Vue components that can be combined to create different kinds of graphs. Broadly speaking, components come in the following categories: Aesthetics, Layers (or Geometries), Transformations, Axes and general plot elements such as legends and titles.
+				</p>
+				<p class="paragraph">
+					As an example, a scatterplot with regression line is a combination of the following components: point layer, regression transformation, single line layer and the axes.
+				</p>
+				<div class="container">
+					<img class="image" src="images/vue img3.svg">
+					<div class="overlay">
+						<p class="imageText">Order of layers in the grammar of graphics, starting with raw data and working upwards to a final visualization.</p>
+					</div>
+				</div>
+			</div>
+			<div id="partthree">
+				<p class="paragraph">
+					So far, the Vue Graphics Grammar library has been used in a number of internal lab projects. One of these projects involved replicating <a href="http://science.sciencemag.org/content/229/4716/828">a 1985 paper</a> on graphical perception by Cleveland and McGill. All visualizations used in the experiment were created using the library.
+				</p>
+				<div class="container">
+					<img class="image" src="images/Vue img4.svg" style="border: solid 1px #d3d3d3">
+					<div class="overlay">
+						<p class="imageText">Graphs used in the experiment to test human ability to distinguish and compare visual differences (angle versus length versus area).</p>
+					</div>
+				</div>
+				<br />
+				<p class="paragraph">The library is also being used to create an explorable explanation for another project on global interest in fashion. Readers can toggle data to view differences in regional interest in brands and influencers.
+				</p>
+				<img class="image" src="images/Vue img5.svg" style="border: solid 1px #d3d3d3">
+			</div>
+
+		</div>
+
+		<div id="item3" class="items">
+			<p>&copy Grace Guo, 2017</p>
+		</div>
+
+	</body>
+</html>
