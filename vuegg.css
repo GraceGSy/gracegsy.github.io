@@ -244,7 +244,7 @@ content paragraphs */
 copyright on bottom left of page */
 #item3 {
 	grid-area: copyright;
-	font-family: "sentinel-book", Georgia, serif;
+	font-family: "Lato", Helvetica, sans-serif;
 	font-size: 14px;
 	letter-spacing: 1px;
 }
