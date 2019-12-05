@@ -26,10 +26,11 @@
 .majorGrid {
 	display: grid;
 	grid-template-columns: 1fr 6fr 1fr;
-	grid-template-rows: 150px auto 50px;
+	grid-template-rows: 150px auto auto 50px;
 	grid-gap: 10px 8px;
 	grid-template-areas:
 		"space1 header space2"
+		"space1 blurb space2"
 		"space1 contents space2"
 		"space1 copyright space2";
 	margin: 0px;
@@ -89,6 +90,21 @@ a:visited {
 	text-align: right;
 }
 
+.blurb {
+	grid-area: blurb;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		"bcontent bcontent spacing";
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+.blurb2 {
+	grid-area: bcontent;
+	padding-right: 50px;
+	line-height: 25px;
+}
+
 .wrapper2 {
 	grid-area: contents;
 	font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -99,7 +115,7 @@ a:visited {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(5, auto);
 	grid-gap: 80px 50px;
-	margin-top: 100px;
+	margin-top: 25px;
 }
 
 .projImage {
