@@ -146,6 +146,7 @@ a:visited {
 	margin-bottom: 5px;
 	font-family: Lato;
 	font-weight: bold;
+	display: flex;
 }
 
 .projDescription {
@@ -153,6 +154,12 @@ a:visited {
 	font-family: lato-light;
 	font-size: 13px;
 	margin: 0px 0px;
+}
+
+.links {
+	margin-left: auto;
+	font-family: lato-light;
+	font-size: 13px;
 }
 
 .sectionHeader {
@@ -186,7 +193,7 @@ a:visited {
 	grid-row: 1/2;
 }
 
-#CS4873 {
+/*#CS4873 {
 	grid-row: 2/3;
 }
 
@@ -196,7 +203,7 @@ a:visited {
 
 #CMU15112 {
 	grid-row: 4/5;
-}
+}*/
 
 #projects {
 	grid-template-columns: repeat(2, 1fr);
