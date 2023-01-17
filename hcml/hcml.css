@@ -159,13 +159,13 @@ adding images with overlay */
 	margin-right: 25px;
 }
 
-.container:hover .image {
+/*.container:hover .image {
   opacity: 0.3;
 }
 
 .container:hover .overlay {
   opacity: 1;
-}
+}*/
 
 
 /* The following is for the

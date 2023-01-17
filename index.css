@@ -168,7 +168,7 @@ a:visited {
 }
 
 #publications {
-	grid-template-rows: repeat(3, auto);
+	grid-template-rows: repeat(4, auto);
 	grid-area: publications;
 }
 
@@ -176,12 +176,16 @@ a:visited {
 	grid-row: 1/2;
 }
 
-#vaine {
+#causalvis {
 	grid-row: 2/3;
 }
 
-#STAR2021 {
+#vaine {
 	grid-row: 3/4;
+}
+
+#STAR2021 {
+	grid-row: 4/5;
 }
 
 #teaching {
