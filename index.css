@@ -320,3 +320,29 @@ copyright on bottom left of page */
 	font-size: 14px;
 	letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 600px) {
+	.majorGrid {
+		grid-template-columns: 1fr 4fr 1fr;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.name {
+		font-size: 30px;
+	}
+
+	.filler {
+		display: none;
+	}
+
+  	.blurb {
+    	font-size: 12px;
+  	}
+
+  	.blurb2 {
+  		padding-right: 0px;
+  	}
+}
