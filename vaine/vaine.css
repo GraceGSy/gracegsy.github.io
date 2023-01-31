@@ -260,7 +260,7 @@ copyright on bottom left of page */
 	letter-spacing: 1px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 	.name {
 		font-size: 30px;
 	}
