@@ -1,0 +1,60 @@
+<html>
+<head>
+   <title>Myintrotoletyouknow</title>
+   <link rel="stylesheet" type="text/css" href="portrait.css">
+</head>
+<body onload="openCam()">
+   <div id="content">
+      <img id="portrait" src="Portrait 2.png" />
+      <div>
+         <video id="videoCam"></video>
+      </div>
+   </div>
+   <script>
+      function openCam(){
+         let All_mediaDevices=navigator.mediaDevices
+         if (!All_mediaDevices || !All_mediaDevices.getUserMedia) {
+            console.log("getUserMedia() not supported.");
+            return;
+         }
+         All_mediaDevices.getUserMedia({
+            audio: true,
+            video: true
+         })
+         .then(function(vidStream) {
+
+            // Get video aspect ratio
+            let settings = vidStream.getVideoTracks()[0].getSettings()
+            let videoHeight = settings.height;
+            let videoWidth = settings.width;
+
+            var video = document.getElementById('videoCam');
+            if ("srcObject" in video) {
+               video.srcObject = vidStream;
+            } else {
+               video.src = window.URL.createObjectURL(vidStream);
+            }
+
+            var portrait = document.getElementById('portrait');
+
+            if (videoHeight <= videoWidth) {
+               video.style.height = "465px";
+               let newWidth = 465 / videoHeight * videoWidth;
+               let imageOffset = (newWidth - 397) / 2;
+               portrait.style.left = imageOffset + "px";
+            } else {
+               video.style.width = "397px";
+               let newHeight = 397 / videoWidth * videoHeight;
+               let imageOffset = (newHeight - 465) / 2;
+               portrait.style.top = imageOffset + "px";
+            }
+
+            video.onloadedmetadata = function(e) {
+               video.play();
+            };
+         })
+         .catch(function(e) {
+            console.log(e.name + ": " + e.message);
+         });
+      }
+   </script>
