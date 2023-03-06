@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grace Guo | Causalvis</title>
+		<link rel="stylesheet" type="text/css" href="causalvis.css">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<script src="proj1.js"></script>
+	</head>
+	<body class="majorGrid">
+
+		<div class="wrapper" style="margin-top:100px">
+			<a href="../index.html"><p class="name"><span style="color:#2f8480; font-weight:100">Grace</span> <span style="font-weight:700; color:black">Guo</span></p></a>
+		</div>
+
+		<div class="wrapper2">
+			
+			<div class="metaInfo">
+				<h2 class="pName">Causalvis: Visualizations for Causal Inference</h2>
+				<p style="margin:0px">Grace Guo, Ehud Karavani, Alex Endert, Bum Chul Kwon</p>
+			</div>
+
+			<div id="one"><p class="contents" style="margin:0px">Abstract</p></div>
+			<!-- <div id="two"><p class="contents" style="margin:0px">Citation</p></div> -->
+			<p class="contents" id="three" style="margin:0px">Materials</p>
+			<!-- <div id="two">
+				<p class="contents" style="margin:0px">Designing an Online</p>
+				<p class="contents" style="margin:0px">Learning Tool</p>
+			</div>
+			<p class="contents" id="three" style="margin:0px">Three Models</p>
+			<p class="contents" id="four" style="margin:0px">Case Studies</p> -->
+
+			<div class="w3-content w3-display-container" id="slides">
+				<div class="container">
+					<img class="image" src="./causalvis_overview.png">
+					<div class="overlay">
+						<p class="imageText"></p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- <div id="partzero">
+				<p style="margin-top:0px">The VAINE (Visualization and AI for Natural Experiments) system interface. The three main views --- the <span style="font-style: italic;">Clusters</span> view, the <span style="font-style: italic;">Average Treatment Effect</span> view, and the <span style="font-style: italic;">Covariates</span> view --- enable analysts to estimate the effect size of the treatment on the outcome variable of interest. Interactive menu options can be used to adjust clusters, exclude outliers, and inspect covariates.</p>
+			</div> -->
+			<div id="partone">
+				<p style="margin-top:0px">Causal inference is a statistical paradigm for quantifying causal effects using observational data. It is a complex process, requiring multiple steps, iterations, and collaborations with domain experts. Analysts often rely on visualizations to evaluate the accuracy of each step. However, existing visualization toolkits are not designed to support the entire causal inference process within computational environments familiar to analysts. In this paper, we address this gap with Causalvis, a Python visualization package for causal inference. Working closely with causal inference experts, we adopted an iterative design process to develop four interactive visualization modules to support causal inference analysis tasks. The modules are then presented back to the experts for feedback and evaluation. We found that Causalvis effectively supported the iterative causal inference process. We discuss the implications of our findings for designing visualizations for causal inference, particularly for tasks of communication and collaboration.</p>
+			</div>
+			<!-- <div id="parttwo">
+				<textarea readonly>
+@ARTICLE{Sperrle2021HCE_STAR,
+	author = {Fabian Sperrle and Mennatallah El-Assady and Grace Guo and Rita Borgo and Duen Horng Chau and Alex Endert and Daniel Keim},
+	title = {A Survey of Human-Centered Evaluations in Human-Centered Machine Learning},
+	journal = {Computer Graphics Forum},
+	year = {2021},
+}</textarea>
+			</div> -->
+			<div id="partthree">
+				<a class="text" style="margin-left:0px" href="https://vimeo.com/804159211">VIDEO</a> | <a class="text" href="https://arxiv.org/abs/2303.00617">PAPER</a> | <a class="text" href="https://github.com/causalvis/causalvis">CODE</a>
+			</div>
+			<!-- <div id="partone">
+				<p class="paragraph">
+					The work of citizen scientists has been invaluable for gathering and monitoring environmental data over time. In recent years, a variety of digital technologies have been developed in order to facilitate such work, making it easier for more people to engage in citizen science activities.
+				</p>
+				<p class="paragraph">
+					Biological monitoring of macroinvertebrates in freshwater ecosystems is one area in which reliably, high-quality data gathered by citizen scientists yields critical information about the water quality and health of these ecosystems. The online educational resource <a href="http://macroinvertebrates.org/#/">macroinvertebrates.org</a> was thus envisioned to help train citizen scientists in data collection, using high-resolution gigapixel images of macroinvertebrates and supplemental media to <b>improve volunteer engagement, accuracy and confidence</b>.
+				</p>
+				<div class="container">
+					<img class="image" src="images/proj1 fig1.png">
+					<div class="overlay">
+						<p class="imageText">macroinvertebrates.org is an online educational resource developed for training citizen scientists to identify freshwater macroinvertebrates.</p>
+					</div>
+				</div>
+			</div>
+			<div id="parttwo">
+				<p class="paragraph">
+					The goal of an online educational resource for training citizen scientists is not to turn these volunteers into professional entomologists. However, part of what makes professional entomologists experts in their field is their ability to apply a variety of strategies to make an accurate identification. <b>A successful learning tool should help these citizen scientists acquire the expert strategies needed to generate reliable data</b>.
+				</p>
+				<p class="paragraph">
+					It is thus necessary to <b>identify, visualize and articulate these expert strategies</b> to stakeholders involved in the design of this online learning tool. To that end, SEE was developed to facilitate communicate across disciplines about the kinds of expert strategies the educational platform should support.
+				</p>
+			</div>
+			<div id="partthree">
+				<p class="paragraph">1. The initial model of visualization is called Play-by-Play. This is a linear recreation of an identification process, breaking it down into separate steps. Each step is considered a shift between resources (e.g. look at specimen, look at key, look back at specimen). Although it is possible to look at a Play-by-Play visualization and get a general sense for patterns of steps and ease of identification, it is hard to intuit the strategies used and obstacles encountered. Nonetheless, the Play-by-Play is a useful initial model that can be translated into other, clearer representations.
+				</p>
+				<div class="container">
+					<img class="image" src="images/proj1 fig2.png" style="border: solid 1px #d3d3d3">
+					<div class="overlay">
+						<p class="imageText">Part of a play-by-play model visualizing the process of an expert identifying a mayfly.</p>
+					</div>
+				</div>
+				<br />
+				<p class="paragraph">2. The matrix model compares the resources used (vertical) against the information sought (horizontal). This model is ideal for identifying frequently used resources, but provides little information about the actual process.
+				</p>
+				<p class="paragraph">3. SEE incorporates the strengths of the above two models. Steps taken towards an identification are represented as moves downwards while changes in strategy (such as looking at a figure when unsure about terms in the text) are represented as moves toward the right.
+				</p>
+				<p class="paragraph">The SEE model makes it clear at a glance where experts struggled and the kinds of strategies they had to adopt before making a definite move downwards. This provides information about the kinds of strategic practices the website could or should have supported. It can thus be used as a grounding point for design decisions about the features that would help novices making an identification.</p>
+			</div>
+			<div id="partfour">
+				<p class="paragraph">The first visualization below is the process taken by an expert who has not done macroinvertebrate identification in years. It can be seen that there are many places where she observes the necessary features rapidly and moves downwards in terms of ID progression. However, there are places where she was uncertain about what she was seeing, and thus had to employ many strategy shifts sideways.</p>
+				<p>Notably, she made a guess at one point. Following that guess, the first ID she arrived at did not make sense to her because the location was outside where the specimen was collected, she then knew to return to where she struggled and took a second look to correct her mistake.</p>
+				<img class="image" src="images/201 Vis 2.png" style="border: solid 1px #d3d3d3">
+				<br />
+				<p class="paragraph">Comparatively the second and third experts below have both been doing macroinvertebrate identification for years. This is clear from the relatively shorter length of their SEE visualizations. It is also worth noting that most of their steps were downwards towards an identification, suggesting that they had little trouble looking for the  diagnostic features. In fact, expert 3 was able to identify the specimen almost at a glance.</p>
+				<img class="image" src="images/Vis 3.png" style="border: solid 1px #d3d3d3">
+			</div> -->
+
+		</div>
+
+		<div id="item3" class="items">
+			<p>&copy Grace Guo, 2023</p>
+		</div>
+
+	</body>
+</html>
