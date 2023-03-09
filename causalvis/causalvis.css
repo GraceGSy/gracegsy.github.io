@@ -129,19 +129,34 @@ title and affiliations */
 
 /* The following is for
 adding images with overlay */
-.container {
+/*.container {
 	position: relative;
 	width: 100%;
 }
+*/
+/* The following is for image
+slides at the top of each project
+page */
+.video {
+	grid-column: 1/3;
+	grid-row: 2/3;
+}
 
-.image {
+.video iframe{ /*change according to your need*/
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*.video {
 	display: block;
 	width: 100%;
 	margin-top: 20px;
 	margin-bottom: 15px;
 	transition: .2s ease;
 	backface-visibility: hidden;
-}
+}*/
 
 .overlay {
 	transition: .2s ease;
@@ -201,15 +216,6 @@ content labels at the side */
 
 .paragraph {
 	margin-top: 0px;
-}
-
-
-/* The following is for image
-slides at the top of each project
-page */
-#slides {
-	grid-column: 1/3;
-	grid-row: 2/3;
 }
 
 
