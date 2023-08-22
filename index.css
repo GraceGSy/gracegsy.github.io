@@ -321,7 +321,49 @@ copyright on bottom left of page */
 	letter-spacing: 1px;
 }
 
+.topnav {
+	position: relative;
+	font-family: "gotham-medium", sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	display: none;
+	width: 100%;
+}
+
+#mobileabout {
+	padding-top: 80px;
+}
+
+#mobileresume {
+	padding-bottom: 50px;
+}
+
+.topnav #mobileMenu {
+	display: none;
+}
+
+.topnav a {
+	background: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	display: block;
+	padding-left: 50px;
+}
+
+.topnav a.icon {
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
 @media only screen and (max-width: 768px) {
+	.topnav {
+		position: fixed;
+		display: block;
+	}
+
 	.majorGrid {
 		grid-template-columns: 1fr 4fr 1fr;
 	}
