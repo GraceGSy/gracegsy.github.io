@@ -156,6 +156,13 @@ a:visited {
 	margin: 0px 0px;
 }
 
+.projDescriptionLink {
+	color: black;
+	font-family: lato-light;
+	font-size: 13px;
+	margin: 0px 0px;
+}
+
 .links {
 	margin-left: auto;
 	font-family: lato-light;
@@ -386,5 +393,9 @@ copyright on bottom left of page */
 
   	.blurb2 {
   		padding-right: 0px;
+  	}
+
+  	.sectionHeader {
+  		line-height: 1.25;
   	}
 }
