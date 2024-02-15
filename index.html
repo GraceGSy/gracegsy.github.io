@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-	<script>
+	<script src="https://kit.fontawesome.com/d8962fe024.js" crossorigin="anonymous"></script>
+	<script type="module">
 		function showMenu() {
 
 			var mobileMenu = document.getElementById("mobileMenu");
@@ -24,7 +25,7 @@
 	<body class="majorGrid">
 
 		<div class="wrapper" id="about">
-			<p class="name"><span style="color:#2f8480; font-weight:100">Grace</span> <span style="font-weight:700;">Guo</span></p>
+			<p class="name"><span style="color:#2f8480; font-weight:100">Grace</span> <span style="color:#2f8480; font-weight:700;">Guo</span></p>
 		</div>
 
 		<div class="topnav">
@@ -42,10 +43,11 @@
 
 
 		<div class="menu">
+			<img src="images/profile.jpg" id="profilephoto"></img>
 			<a class="text" id="aboutmenu" href="#about">about</a>
 			<a class="text" href="#publications">publications</a>
 			<a class="text" href="#teaching">teaching</a>
-			<!-- <a class="text" href="#projects">projects</a> -->
+			<a class="text" href="#opensource">open source</a>
 			<a class="text" id="resumemenu" href="files/resume.pdf">resume</a>
 		</div>
 
@@ -62,21 +64,22 @@
 				I am interested in work at the intersection of AI, visualization and human-computer interaction. My current research focuses on developing visual analytics tools for explainable AI and causal inference, particularly in the domains of adult education and healthcare analytics. I am honored to be a recipient of the <a style="color: #2f8480" href="https://research.ibm.com/university/awards/fellowships.html">2023 IBM PhD Fellowship</a>.
 				</p>
 
-				<p>
-				Find me at:
-				</p>
+				<div id="contact">
 
-				<p><span>email: gguo31@gatech.edu</span></p>
-				<p><span>twitter: <a style="color: #2f8480" href="https://twitter.com/graceguo43">@graceguo43</a></span></p>
-				<p><span><a style="color: #2f8480" href="https://www.linkedin.com/in/grace-guo-005b81b7/">linkedin</a></span></p>
+					<!-- <p>Find me at:</p> -->
+
+					<a class="contactIcons" style="font-size:165%" href="https://www.linkedin.com/in/grace-guo-005b81b7/" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+					<a class="contactIcons" href="https://twitter.com/graceguo43" class="icon"><i class="fa-brands fa-twitter"></i></a>
+					<a class="contactIcons" href="https://scholar.google.com/citations?user=b26OFCcAAAAJ&hl=en" class="icon"><i class="fa-solid fa-graduation-cap"></i></a>
+				</div>
 			</div>
 		</div>
 
 		<div class="wrapper2" id="publications">
 
 			<div id="publicationsHeader">
-				<h3 class="sectionHeader">Publication Highlights</h3>
-				<p class="projName"><a style="color: black" href="https://scholar.google.com/citations?user=b26OFCcAAAAJ&hl=en">See all...</a></p>
+				<h3 class="sectionHeader">Publications</h3>
+				<!-- <p class="projName"><a style="color: black" href="https://scholar.google.com/citations?user=b26OFCcAAAAJ&hl=en">See all...</a></p> -->
 			</div>
 			
 
@@ -85,9 +88,6 @@
 				</p>
 				<p class="projDescription">Anh-Ton Tran, Grace Guo, Jordan Taylor, Katsuki Andrew Chan, Elora Lee Raymond, Carl DiSalvo</p>
 				<p class="projDescription">ACM CHI, 2024 (Upcoming)</p>
-				<a style="color: black">
-					<img class="image" src="images/hjl.png" style="border: solid 1px #d3d3d3">
-				</a>
 			</div>
 
 			<div id="causalvis">
@@ -102,11 +102,7 @@
 			</div>
 
 			<div id="vaine">
-				<p class="projName"><a style="color: black" href="vaine/vaine.html">VAINE: Visualization and AI for Natural Experiments</a> 
-					<!-- <span class="links">
-					<a href="https://gracegsy.github.io/vaine_dev/">demo</a> | <a href="https://arxiv.org/abs/2109.04348">pdf</a>
-					</span> -->
-				</p>
+				<p class="projName"><a style="color: black" href="vaine/vaine.html">VAINE: Visualization and AI for Natural Experiments</a></p>
 				<p class="projDescription">Grace Guo, Maria Glenski, ZhuanYi Shaw, Emily Saldanha, Alex Endert, Svitlana Volkova, Dustin Arendt</p>
 				<p class="projDescription">IEEE Information Visualization Short Papers, 2021</p>
 				<a class="projDescription projDescriptionLink" style="color:black" style="margin-left:0px" href="https://www.youtube.com/watch?v=mIIqAD74iD4&ab_channel=IEEEVisualizationConference">video</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://arxiv.org/abs/2109.04348">paper</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://gracegsy.github.io/vaine_dev/">demo</a>
@@ -123,6 +119,13 @@
 				<a style="color: black" href="hcml/hcml.html">
 					<img class="image" src="hcml/star2021.png" style="border: solid 1px #d3d3d3">
 				</a>
+			</div>
+
+			<div id="florence">
+				<p class="projName"><a style="color: black" href="https://cartographicperspectives.org/index.php/journal/article/view/1645">Florence: a Web-based Grammar of Graphics for Making Maps and Learning Cartography</a>
+				</p>
+				<p class="projDescription">Ate Poorthuis, Lucas van der Zee, Grace Guo, Jo Hsi Keong, Bianchi Dy</p>
+				<p class="projDescription">Cartographic Perspectives, Issue 96, 2020</p>
 			</div>
 
 		</div>
@@ -158,19 +161,23 @@
 
 		</div>
 
-		<!-- <div class="wrapper2" id="projects">
+		<div id="opensource">
 
-			<h3 id="projectsHeader" class="sectionHeader">Projects</h3>
+			<h3 id="projectsHeader" class="sectionHeader">Open Source</h3>
 
-			<a href="https://housingjusticeleague.github.io/hjl-vis/" id="hjl">
-				<div class="container">
-					<p class="projName">Address-Based Evictions Tracker</p>
-					<p class="projDescription">Created for the Atlanta Housing Justice League, this dashboard visualizes up-to-date evictions happening in the Atlanta region.</p>
-					<img class="image" style="height: 100%" src="images/hjl.png" style="border: solid 1px #d3d3d3">
-				</div>
-			</a>
+			<p id="opensourceDescription" class="projDescription">A collection of my open source libraries and repos. I am always looking for contributors to document, maintain and implement new features for these libraries. Please reach out if you might be interested in doing so.</p>
 
-		</div> -->
+			<div id="auteur">
+				<p class="projName"><a style="color: black" href="https://auteur-vis.github.io/auteur-doc/gettingstarted">Auteur</a></p>
+				<p class="projDescription">Auteur is a front-end JavaScript toolkit designed to help with adding augmentations to web-based D3 visualizations and visualization systems to convey statistical and custom data relationships. To get started using Auteur, check out our <a href="https://auteur-vis.github.io/auteur-doc/gettingstarted">documentation</a> and <a href="https://auteur-vis.github.io/auteur-doc/gallery">examples</a>.</p>
+			</div>
+
+			<div id="causalvisgit">
+				<p class="projName"><a style="color: black" href="https://github.com/causalvis/causalvis">Causalvis</a></p>
+				<p class="projDescription">Causalvis is a python library of interactive visualizations for causal inference, designed to work with the JupyterLab computational environment. <a href="https://dl.acm.org/doi/abs/10.1145/3544548.3581236">Read our paper here.</a></p>
+			</div>
+
+		</div>
 
 		<div id="item3" class="items">
 			<p>&copy Grace Guo, 2024</p>

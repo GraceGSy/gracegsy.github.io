@@ -56,7 +56,7 @@ navigation bar */
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 1px;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 35px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -124,6 +124,7 @@ title and affiliations */
 
 .pName {
 	line-height: 30px;
+	font-size: 26px;
 }
 
 
