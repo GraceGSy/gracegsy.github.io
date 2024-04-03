@@ -191,7 +191,7 @@ a:visited {
 }
 
 #publications {
-	grid-template-rows: repeat(8, auto);
+	grid-template-rows: repeat(10, auto);
 	grid-area: publications;
 }
 
@@ -199,28 +199,36 @@ a:visited {
 	grid-row: 1/2;
 }
 
-#vista {
+#mimicri {
 	grid-row: 2/3;
 }
 
-#elicitation {
+#vista {
 	grid-row: 3/4;
 }
 
-#hjl {
+#elicitation {
 	grid-row: 4/5;
 }
 
-#causalvis {
+#bonxai {
 	grid-row: 5/6;
 }
 
-#vaine {
+#hjl {
 	grid-row: 6/7;
 }
 
-#STAR2021 {
+#causalvis {
 	grid-row: 7/8;
+}
+
+#vaine {
+	grid-row: 8/9;
+}
+
+#STAR2021 {
+	grid-row: 9/10;
 }
 
 #teaching {
