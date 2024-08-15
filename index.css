@@ -42,7 +42,7 @@ h3 {
 
 .majorGrid {
 	display: grid;
-	grid-template-columns: 2fr 3fr 2fr;
+	grid-template-columns: 300px 5fr 1fr;
 	grid-template-rows: 150px repeat(4, auto) 50px;
 	grid-gap: 10px 8px;
 	grid-template-areas:
@@ -74,7 +74,7 @@ h3 {
 	align-items: flex-end;
 	position: fixed;
 	z-index: 2;
-	margin: 122px 20px 0px 5%;
+	margin: 122px 20px 0px 60px;
 }
 
 #profilephoto {
@@ -139,6 +139,7 @@ a:visited {
 .blurb {
 	grid-area: blurb;
 	font-family: "Lato", Helvetica, Arial, sans-serif;
+	max-width: 800px
 }
 
 .blurb2 {
@@ -154,6 +155,15 @@ a:visited {
 	display: grid;
 	grid-gap: 30px 50px;
 	margin-top: 25px;
+}
+
+.proj {
+	display: flex;
+}
+
+.projText {
+	margin-left: 20px;
+	max-width: 580px
 }
 
 .projName {
@@ -191,7 +201,7 @@ a:visited {
 }
 
 #publications {
-	grid-template-rows: repeat(10, auto);
+	grid-template-rows: repeat(12, auto);
 	grid-area: publications;
 }
 
@@ -220,15 +230,19 @@ a:visited {
 }
 
 #causalvis {
-	grid-row: 7/8;
+	grid-row: 2/3;
 }
 
 #vaine {
-	grid-row: 8/9;
+	grid-row: 3/4;
 }
 
 #STAR2021 {
-	grid-row: 9/10;
+	grid-row: 4/5;
+}
+
+#florence {
+	grid-row: 5/6;
 }
 
 #teaching {
@@ -280,6 +294,14 @@ a:visited {
 	grid-row: 1/2;
 }
 
+.datesHeader {
+	grid-column: 1/3;
+	grid-row: 1/2;
+	margin: 50px 0px 0px 0px;
+	color: #777;
+	font-size: 18px;
+}
+
 
 /* The following is for
 adding images with overlay */
@@ -290,7 +312,7 @@ adding images with overlay */
 
 .image {
 	display: block;
-	width: 100%;
+	width: 200px;
 	margin-top: 14px;
 	margin-bottom: 15px;
 	transition: .2s ease;
@@ -359,7 +381,10 @@ copyright on bottom left of page */
 }
 
 .topnav #mobileMenu {
-	display: none;
+	/*display: none;*/
+	height: 0px;
+	transition: height .5s ease-in-out;
+	overflow: hidden;
 }
 
 .topnav a {
@@ -389,7 +414,23 @@ copyright on bottom left of page */
 	}
 
 	.menu {
-		display: none;
+		/*display: none;*/
+		height: 0px;
+		overflow: hidden;
+		-webkit-transition:1s;
+	}
+
+	.proj {
+		flex-direction: column;
+		margin-top: 25px
+	}
+
+	.image {
+		width: 100%;
+	}
+
+	.projText {
+		margin-left: 0px;
 	}
 
 	.name {
@@ -400,15 +441,15 @@ copyright on bottom left of page */
 		display: none;
 	}
 
-  	.blurb {
-    	font-size: 12px;
-  	}
+	.blurb {
+  	font-size: 12px;
+	}
 
-  	.blurb2 {
-  		padding-right: 0px;
-  	}
+	.blurb2 {
+		padding-right: 0px;
+	}
 
-  	.sectionHeader {
-  		line-height: 1.25;
-  	}
+	.sectionHeader {
+		line-height: 1.25;
+	}
 }
