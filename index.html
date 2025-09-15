@@ -10,8 +10,6 @@
 </head>
 <body>
 
-  <button id="toggle">☰</button>
-
   <aside id="sidebar">
     <img src="images/profile_animate_1.png" id="profilephoto"></img>
       <a class="text" id="aboutmenu" href="#about">about</a>
@@ -20,6 +18,19 @@
       <a class="text" href="#opensource">open source</a>
       <a class="text" id="resumemenu" href="files/resume.pdf">resume</a>
   </aside>
+
+  <div class="topnav">
+      <div id="mobileMenu" style="height:0px">
+        <a id="mobileabout" href="#about">about</a>
+        <a href="#publications">publications</a>
+        <a href="#teaching">teaching</a>
+        <a href="#opensource">open source</a>
+        <a id="mobileresume" href="files/resume.pdf">resume</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
   <main>
 
@@ -298,11 +309,16 @@
 
   <script>
     // Sidebar toggle
-    const toggleBtn = document.getElementById('toggle');
-    const sidebar = document.getElementById('sidebar');
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-    });
+    function showMenu() {
+      var mobileMenu = document.getElementById("mobileMenu");
+      if (mobileMenu.style.height != "0px") {
+        mobileMenu.style.height = "0px";
+        mobileMenu.style.boxShadow = "none";
+      } else {
+        mobileMenu.style.height = "348px";
+        mobileMenu.style.boxShadow = "0px 0px 10px 10px rgba(0, 0, 0, .1)";
+      }
+    }
 
     $(function() {
       $("#profilephoto").hover(

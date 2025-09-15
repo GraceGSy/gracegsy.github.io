@@ -171,8 +171,6 @@ main {
   padding: 1rem 3rem;
   box-sizing: border-box;
   max-width: 960px;
-  max-height: 100vw;
-  overflow: scroll;
   margin-top: 120px;
 }
 
@@ -530,7 +528,8 @@ copyright on bottom left of page */
 	background: white;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 18px;
+	font-family: "jersey10", sans-serif;
+	font-size: 22px;
 	display: block;
 	padding-left: 50px;
 }
@@ -550,6 +549,7 @@ copyright on bottom left of page */
   main {
     margin-left: 0;
     padding: 1.5rem 1rem;
+    margin-top: 0px
   }
 
 	.topnav {
@@ -561,12 +561,17 @@ copyright on bottom left of page */
 		grid-template-columns: 1fr 4fr 1fr;
 	}
 
+	#profilephoto {
+		display: none;
+	}
+
 	#sidebar {
     /*transform: translateX(calc(-1 * var(--sidebar-width)));*/
     /*display: none;*/
 		height: 0px;
 		overflow: hidden;
 		-webkit-transition:1s;
+		display: none;
   }
 
 	.proj {
@@ -583,7 +588,7 @@ copyright on bottom left of page */
 	}
 
 	.name {
-		font-size: 30px;
+		font-size: 52px;
 	}
 
 	.filler {
@@ -600,5 +605,6 @@ copyright on bottom left of page */
 
 	.sectionHeader {
 		line-height: 1.25;
+		font-size: 36px;
 	}
 }
