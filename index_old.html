@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+	<script src="https://kit.fontawesome.com/d8962fe024.js" crossorigin="anonymous"></script>
+	<script>
+
+		function showMenu() {
+			var mobileMenu = document.getElementById("mobileMenu");
+			if (mobileMenu.style.height != "0px") {
+				mobileMenu.style.height = "0px";
+				mobileMenu.style.boxShadow = "none";
+			} else {
+				mobileMenu.style.height = "327px";
+				mobileMenu.style.boxShadow = "0px 0px 10px 10px rgba(0, 0, 0, .1)";
+			}
+		}
+
+	</script>
+
+	<head>
+		<title>Grace Guo | Projects</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body class="majorGrid">
+
+		<div class="wrapper" id="about">
+			<p class="name"><span style="color:#2f8480; font-weight:100">Grace</span> <span style="color:#2f8480; font-weight:700;">Guo</span></p>
+		</div>
+
+		<div class="topnav">
+			<div id="mobileMenu" style="height:0px">
+				<a id="mobileabout" href="#about">about</a>
+				<a href="#publications">publications</a>
+				<a href="#teaching">teaching</a>
+				<a href="#opensource">open source</a>
+				<a id="mobileresume" href="files/resume.pdf">resume</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="showMenu()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+
+		<div class="menu">
+			<img src="images/profile.jpg" id="profilephoto"></img>
+			<a class="text" id="aboutmenu" href="#about">about</a>
+			<a class="text" href="#publications">publications</a>
+			<a class="text" href="#teaching">teaching</a>
+			<a class="text" href="#opensource">open source</a>
+			<a class="text" id="resumemenu" href="files/resume.pdf">resume</a>
+		</div>
+
+		<div class="filler">
+		</div>
+
+		<div class="blurb">
+			<div class="blurb2">
+				<p>
+				Hello, I'm Grace. I am a Postdoctoral Fellow at the  <a style="color: #2f8480" href="https://vcg.seas.harvard.edu/">Visual Computing Group</a> at Harvard. My research looks at building human-centered explainability tools for AI, particularly in the biomedical and healthcare domains.
+				</p>
+
+				<p>
+				I received my PhD in Human-centered Computing from Georgia Tech, where I was advised by <a style="color: #2f8480" href="http://va.gatech.edu/endert/">Professor Alex Endert</a>. Previously, I completed my bachelor's in Human-computer Interaction and Cognitive Science from Carnegie Mellon University. I am honored to be a recipient of the <a style="color: #2f8480" href="https://research.ibm.com/university/awards/fellowships.html">2023-2024 IBM PhD Fellowship</a>.
+				</p>
+
+				<div id="contact">
+					<a class="contactIcons" alt="linkedin" style="font-size:165%" href="https://www.linkedin.com/in/grace-guo-005b81b7/" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+					<a class="contactIcons" alt="twitter" href="https://twitter.com/graceguo43" class="icon"><i class="fa-brands fa-twitter"></i></a>
+					<a class="contactIcons" alt="google scholar" href="https://scholar.google.com/citations?user=b26OFCcAAAAJ&hl=en" class="icon"><i class="fa-solid fa-graduation-cap"></i></a>
+					<a class="contactIcons" alt="github" href="https://github.com/GraceGSy/" class="icon"><i class="fa-brands fa-github"></i></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="publications">
+
+			<div id="publicationsHeader">
+				<h3 class="sectionHeader">Publications</h3>
+			</div>
+
+			<div class="wrapper2" id="2024">
+
+				<h4 class="datesHeader">2024</h4>
+
+				<div id="mimicri" class="proj">
+					<a style="color: black" href="mimicri/mimicri.html" class="projImg">
+						<img class="image" src="mimicri/mimicri.png" style="border: solid 1px #d3d3d3">
+					</a>
+					<div class="projText">
+						<p class="projName"><a style="color: black" href="mimicri/mimicri.html">MiMICRI: Towards Domain-centered Counterfactual Explanations of Cardiovascular Image Classification Models</a>
+						</p>
+						<p class="projDescription">Grace Guo, Lifu Deng, Animesh Tandon, Alex Endert, Bum Chul Kwon</p>
+						<p class="projDescription">ACM FAccT, 2024</p>
+						<a class="projDescription projDescriptionLink" style="color:black" href="https://arxiv.org/abs/2404.16174">paper</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://github.com/IBM/mimicri/tree/main">code</a>
+					</div>
+				</div>
+
+				<div id="vista" class="proj">
+					<a style="color: black" href="https://arxiv.org/abs/2404.12944" class="projImg">
+						<img class="image" src="aloe/aloe.png" style="border: solid 1px #d3d3d3">
+					</a>
+					<div class="projText">
+						<p class="projName"><a style="color: black" href="https://arxiv.org/abs/2404.12944">Visualizing Intelligent Tutor Interactions for Responsive Pedagogy</a>
+						</p>
+						<p class="projDescription">Grace Guo*, Aishwarya Mudgal Sunil Kumar*, Adit Gupta, Adam Coscia, Chris MacLellan, Alex Endert</p>
+						<p class="projDescription">*co-first authors</p>
+						<p class="projDescription">ACM AVI, 2024</p>
+					</div>
+				</div>
+
+				<div id="elicitation" class="proj">
+					<a style="color: black" href="https://arxiv.org/abs/2404.12952" class="projImg">
+						<img class="image" src="elicitation/elicitation.png" style="border: solid 1px #d3d3d3">
+					</a>
+					<div class="projText">
+						<p class="projName"><a style="color: black" href="https://arxiv.org/abs/2404.12952">What We Augment When We Augment Visualizations: A Design Elicitation Study of How We Visually Express Data Relationships</a>
+						</p>
+						<p class="projDescription">Grace Guo, John Stasko, Alex Endert</p>
+						<p class="projDescription">ACM AVI, 2024</p>
+					</div>
+				</div>
+
+				<div id="bonxai" class="proj">
+					<a style="color: black" href="bonxai/bonxai.html">
+						<img class="image" src="bonxai/bonxai.png" style="border: solid 1px #d3d3d3">
+					</a>
+					<div class="projText">
+						<p class="projName"><a style="color: black" href="bonxai/bonxai.html">Explainability in JupyterLab and Beyond: Interactive XAI Systems for Integrated and Collaborative Workflows</a>
+						</p>
+						<p class="projDescription">Grace Guo, Dustin Arendt, Alex Endert</p>
+						<p class="projDescription">ACM CHI Workshop on Human-Notebook Interactions, 2024</p>
+						<a class="projDescription projDescriptionLink" style="color:black" href="https://arxiv.org/abs/2404.02081">paper</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://github.com/GraceGSy/bonXAI">code</a>
+					</div>
+				</div>
+
+				<div id="hjl" class="proj">
+					<a style="color: black" href="https://arxiv.org/abs/2402.12505">
+						<img class="image" src="situating/situating.png" style="border: solid 1px #d3d3d3">
+					</a>
+					<div class="projText">
+						<p class="projName"><a style="color: black" href="https://arxiv.org/abs/2402.12505">Situating Datasets: Making Public Eviction Data Actionable for Housing Justice</a>
+						</p>
+						<p class="projDescription">Anh-Ton Tran, Grace Guo, Jordan Taylor, Katsuki Andrew Chan, Elora Lee Raymond, Carl DiSalvo</p>
+						<p class="projDescription">ACM CHI, 2024</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="wrapper2" id="2023">
+
+				<h4 class="datesHeader">2020-2023</h4>
+
+				<div id="causalvis" class="proj">
+					<a style="color: black" href="causalvis/causalvis.html">
+						<img class="image" src="causalvis/causalvis.png" style="border: solid 1px #d3d3d3">
+					</a>
+					<div class="projText">
+						<p class="projName"><a style="color: black" href="causalvis/causalvis.html">Causalvis: Visualizations for Causal Inference</a>
+						</p>
+						<p class="projDescription">Grace Guo, Ehud Karavani, Alex Endert, Bum Chul Kwon</p>
+						<p class="projDescription">ACM CHI, 2023</p>
+						<a class="projDescription projDescriptionLink" style="color:black" href="https://vimeo.com/804159211">video</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://dl.acm.org/doi/abs/10.1145/3544548.3581236">paper</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://github.com/causalvis/causalvis">code</a>
+					</div>
+				</div>
+
+				<div id="vaine" class="proj">
+					<a style="color: black" href="vaine/vaine.html">
+						<img class="image" src="vaine/vaine.png" style="border: solid 1px #d3d3d3">
+					</a>
+					<div class="projText">
+						<p class="projName"><a style="color: black" href="vaine/vaine.html">VAINE: Visualization and AI for Natural Experiments</a></p>
+						<p class="projDescription">Grace Guo, Maria Glenski, ZhuanYi Shaw, Emily Saldanha, Alex Endert, Svitlana Volkova, Dustin Arendt</p>
+						<p class="projDescription">IEEE Information Visualization Short Papers, 2021</p>
+						<a class="projDescription projDescriptionLink" style="color:black" style="margin-left:0px" href="https://www.youtube.com/watch?v=mIIqAD74iD4&ab_channel=IEEEVisualizationConference">video</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://arxiv.org/abs/2109.04348">paper</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://gracegsy.github.io/vaine_dev/">demo</a>
+						</div>
+				</div>
+
+				<div id="STAR2021" class="proj">
+					<a style="color: black" href="hcml/hcml.html">
+						<img class="image" src="hcml/star2021.png" style="border: solid 1px #d3d3d3">
+					</a>
+					<div class="projText">
+						<p class="projName"><a style="color: black" href="hcml/hcml.html">A Survey of Human-Centered Evaluations in Human-Centered Machine Learning</a></p>
+						<p class="projDescription">Fabian Sperrle, Mennatallah El-Assady, Grace Guo, Rita Borgo, Duen Horng Chau, Alex Endert, Daniel Keim</p>
+						<p class="projDescription">Computer Graphics Forum, 2021</p>
+						<a class="projDescription projDescriptionLink" style="color:black" style="margin-left:0px" href="https://www.youtube.com/watch?v=5FpqgH-E4GU&ab_channel=EuroVis">video</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.14329?af=R">paper</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://human-centered-evaluations-star.dbvis.de/">survey homepage</a> | <a class="projDescription projDescriptionLink" style="color:black" href="https://hce-star.dbvis.de/">survey browser</a>
+					</div>
+				</div>
+
+				<div id="florence" class="proj">
+					<a style="color: black" href="https://cartographicperspectives.org/index.php/journal/article/view/1645">
+						<img class="image" src="florence/florence.png" style="border: solid 1px #d3d3d3">
+					</a>
+					<div class="projText">
+						<p class="projName"><a style="color: black" href="https://cartographicperspectives.org/index.php/journal/article/view/1645">Florence: a Web-based Grammar of Graphics for Making Maps and Learning Cartography</a>
+						</p>
+						<p class="projDescription">Ate Poorthuis, Lucas van der Zee, Grace Guo, Jo Hsi Keong, Bianchi Dy</p>
+						<p class="projDescription">Cartographic Perspectives, Issue 96, 2020</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="wrapper2" id="teaching">
+
+			<h3 id="teachingHeader" class="sectionHeader">Teaching</h3>
+
+			<a id="CS7455">
+				<p class="projName">CS4460: Introduction to Information Visualization | Georgia Tech</p>
+				<p class="projDescription">Spring 2023 | TA</p>
+			</a>
+
+			<a id="CS7455">
+				<p class="projName">CS7455: Issues in Human-Centered Computing | Georgia Tech</p>
+				<p class="projDescription">Spring 2022 | TA</p>
+			</a>
+
+			<a id="CS4873">
+				<p class="projName">CS4873: Computing, Society and Professionalism | Georgia Tech</p>
+				<p class="projDescription">Summer 2021 | TA</p>
+			</a>
+
+			<a id="CS7450">
+				<p class="projName">CS7450: Information Visualization | Georgia Tech</p>
+				<p class="projDescription">Fall 2020 | Head TA</p>
+			</a>
+
+			<a id="CMU15112">
+				<p class="projName">15-112: Fundamentals of Programming and CS | CMU</p>
+				<p class="projDescription">Fall 2015, Spring 2016 | TA</p>
+			</a>
+
+		</div>
+
+		<div id="opensource" style="max-width: 800px">
+
+			<h3 id="projectsHeader" class="sectionHeader">Open Source</h3>
+
+			<p id="opensourceDescription" class="projDescription">A collection of my open source libraries and repos. I am always looking for contributors to document, maintain and implement new features for these libraries. Please reach out if you might be interested in doing so.</p>
+
+			<div id="auteur">
+				<p class="projName"><a style="color: black" href="https://auteur-vis.github.io/auteur-doc/gettingstarted">Auteur</a></p>
+				<p class="projDescription">Auteur is a front-end JavaScript toolkit designed to help with adding augmentations to web-based D3 visualizations and visualization systems to convey statistical and custom data relationships. To get started using Auteur, check out our <a href="https://auteur-vis.github.io/auteur-doc/gettingstarted">documentation</a> and <a href="https://auteur-vis.github.io/auteur-doc/gallery">examples</a>.</p>
+			</div>
+
+			<div id="causalvisgit">
+				<p class="projName"><a style="color: black" href="https://github.com/causalvis/causalvis">Causalvis</a></p>
+				<p class="projDescription">Causalvis is a python library of interactive visualizations for causal inference, designed to work with the JupyterLab computational environment. <a href="https://dl.acm.org/doi/abs/10.1145/3544548.3581236">Read our paper here.</a></p>
+			</div>
+
+		</div>
+
+		<div id="item3" class="items">
+			<p>&copy Grace Guo, 2024</p>
+		</div>
+
+		</div>
+	</body>
+</html>
