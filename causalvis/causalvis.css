@@ -23,6 +23,11 @@
     src: url(../assets/GOTHAM-BOLD.TTF);
 }
 
+@font-face{
+		font-family: "jersey10";
+		src: url(../assets/Jersey10-Regular.ttf);
+}
+
 .majorGrid {
 	display: grid;
 	grid-template-columns: 1fr 6fr 1fr;
@@ -53,12 +58,12 @@ navigation bar */
 }
 
 .name {
-	font-family: 'Lato', sans-serif;
-	letter-spacing: 1px;
+	font-family: "jersey10", sans-serif;
+	letter-spacing: 0.1em;
 	font-weight: bold;
-	font-size: 35px;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	font-size: 58px;
+  margin-top: 0px;
+  margin-bottom: 42px;
 }
 
 /*.text {
@@ -269,7 +274,7 @@ copyright on bottom left of page */
 
 @media only screen and (max-width: 768px) {
 	.name {
-		font-size: 30px;
+		font-size: 52px;
 	}
 
 	.pName {
